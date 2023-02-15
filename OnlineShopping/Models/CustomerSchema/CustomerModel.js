@@ -9,19 +9,24 @@ const users = mongoose.Schema({
     },
     CustomerName:
     {
-        type: String
+        type: String,
+        uppercase: true,
+        required: true
     },
     CustomerEmail:
     {
-        type: String
+        type: String,
+        required: true
     },
     CustomerMobile:
     {
-        type: String
+        type: String,
+        required: true
     },
     CustomerPassword:
     {
-        type: String
+        type: String,
+        required: true
     },
     CustomerLogo:
     {

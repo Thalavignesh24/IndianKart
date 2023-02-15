@@ -1,8 +1,10 @@
-const express=require('express');
-const router=express.Router();
-const CustomerController=require('../../Controllers/Customers/CustomerController');
+const express = require('express');
+const router = express.Router();
+const CustomerController = require('../../Controllers/Customers/CustomerController');
 
-router.get('/CustomerRegister',CustomerController.CustomerRegisterPage);
-router.post('/Register',CustomerController.CustomerRegister);
+router.get('/CustomerRegister', CustomerController.CustomerRegisterPage);
+router.get('/CustomerLogin', CustomerController.CustomerLoginPage);
+router.post('/Register', CustomerController.CustomerRegister);
+router.post('/Login', CustomerController.CustomerLogin);
 
-module.exports=router;
+module.exports = router;

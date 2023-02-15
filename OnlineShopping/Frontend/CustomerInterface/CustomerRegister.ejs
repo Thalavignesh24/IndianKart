@@ -6,23 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Register</title>
+
+    <style>
+        body {
+            background-image: url('/Images/background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .header {
+            margin-top: 8%;
+            background-color: midnightblue;
+            width: 600px;
+            height: 100px;
+            margin-left: 27%;
+            color: beige;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        .header h1 {
+            padding: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .container {
+            background-color: black;
+            width: 600px;
+            height: 500px;
+            margin-left: 27%;
+            color: beige;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+
+        .container label {
+            margin-left: 15%;
+        }
+
+        .form-control {
+            margin-top: 3%;
+            margin-left: 15%;
+            width: 400px;
+            height: 40px;
+            border-radius: 10px;
+            border-color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .form-control1 {
+            margin-left: 53%;
+            width: 180px;
+            height: 40px;
+            background-color: greenyellow;
+            border-radius: 15px;
+        }
+    </style>
+
 </head>
 
 <body>
-    <h1>Register</h1>
-    <form action="/IndianKart/Register" enctype="multipart/form-data" method="POST">
-        <label>Your Name</label><br>
-        <input type="text" name="CustomerName"><br><br>
-        <label>Your Email</label><br>
-        <input type="text" name="CustomerEmail"><br><br>
-        <label>Your MobileNumber</label><br>
-        <input type="text" name="CustomerMobile"><br><br>
-        <label>Your Password</label><br>
-        <input type="text" name="CustomerPassword"><br><br>
-        <label>Your Profile</label><br>
-        <input type="file" name="CustomerLogo"><br><br>
-        <input type="submit" name="submit" value="Register">
-    </form>
+
+    <div class="header">
+        <h1 align="center">Registration Form</h1>
+    </div>
+
+    <div class="container">
+        <form action="/IndianKart/Register" enctype="multipart/form-data" method="POST">
+            <input type="text" name="CustomerName" placeholder="Your Name" class="form-control"><br><br>
+            <input type="text" name="CustomerEmail" placeholder="Your Email" class="form-control"><br><br>
+            <input type="text" name="CustomerMobile" placeholder="Your MobileNumber" class="form-control"><br><br>
+            <input type="text" name="CustomerPassword" placeholder="Your Password" class="form-control"><br><br>
+            <label>Your Profile</label><br>
+            <input type="file" name="CustomerLogo" class="form-control"><br><br>
+            <input type="submit" name="submit" class="form-control1" value="Register">
+        </form>
+    </div>
+
+    <div class="footer"></div>
+
 </body>
 
 </html>
