@@ -21,6 +21,21 @@ function CustomerManagement() {
         try {
             const { CustomerName, CustomerEmail, CustomerMobile, CustomerPassword } = req.body;
             const CustomerLogo = req?.files?.CustomerLogo;
+
+            const checkEmail = await CustomerModel.findOne({ CustomerEmail: CustomerEmail });
+            if (checkEmail) {
+                res.send({
+                    "Message": "Email Is Already Exists"
+                });
+            }
+
+            const checkMobile=await CustomerModel.findOne({CustomerMobile:CustomerMobile});
+            if(checkMobile){
+                res.send({
+                    "Message": "Phone Is Already Exists"
+                });
+            }
+
             let image = await cloudinary.uploader.upload(CustomerLogo.tempFilePath);
 
             if (!image) {
@@ -63,7 +78,7 @@ function CustomerManagement() {
                     res.send("Incorrect Password");
                 } else {
                     const userToken = await jwt.sign({ CustomerEmail: CustomerEmail }, "SecretKey", { expiresIn: "50s" });
-                    // console.log(userToken);
+                    console.log(userToken);
                     res.send({
                         "token": userToken
                     });
@@ -75,7 +90,7 @@ function CustomerManagement() {
     }
 
     this.CustomerProfile = async (req, res) => {
-        res.send("Hello Welcome Home");
+        res.render('CustomerProfile')
     }
 
     this.CustomerExcel = async (req, res) => {
