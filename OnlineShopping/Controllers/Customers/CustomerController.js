@@ -3,6 +3,9 @@ const bcrypt = require('bcrypt');
 const { v4: uuidv4 } = require('uuid');
 const Utils = require('../../Helpers/Utils');
 const cloudinary = require('cloudinary').v2;
+const jwt = require('jsonwebtoken');
+const excel = require('exceljs');
+
 
 function CustomerManagement() {
     this.CustomerRegisterPage = (req, res) => {
@@ -19,7 +22,7 @@ function CustomerManagement() {
             const { CustomerName, CustomerEmail, CustomerMobile, CustomerPassword } = req.body;
             const CustomerLogo = req?.files?.CustomerLogo;
             let image = await cloudinary.uploader.upload(CustomerLogo.tempFilePath);
-            
+
             if (!image) {
                 res.send("Failed To Load");
             } else {
@@ -59,12 +62,56 @@ function CustomerManagement() {
                 if (!checkPassword) {
                     res.send("Incorrect Password");
                 } else {
-                    res.send("Login Success");
+                    const userToken = await jwt.sign({ CustomerEmail: CustomerEmail }, "SecretKey", { expiresIn: "50s" });
+                    // console.log(userToken);
+                    res.send({
+                        "token": userToken
+                    });
                 }
             }
         } catch (error) {
             console.log(error.message);
         }
+    }
+
+    this.CustomerProfile = async (req, res) => {
+        res.send("Hello Welcome Home");
+    }
+
+    this.CustomerExcel = async (req, res) => {
+        try {
+            const workbook = new excel.Workbook();
+            const worksheet = workbook.addWorksheet("customers");
+            worksheet.columns = [
+                { header: "S.No", key: "sno" },
+                { header: "CustomerName", key: "CustomerName" },
+                { header: "CustomerEmail", key: "CustomerEmail" },
+                { header: "MobileNumber", key: "CustomerMobile" },
+                { header: "CustomerPassword", key: "CustomerPassword" }
+            ];
+            let count = 1;
+            const ct = await (CustomerModel.find());
+            console.log(ct);
+            ct.forEach((ct) => {
+                ct.sno = count;
+                worksheet.addRow(ct);
+                count++;
+            });
+            worksheet.getRow(1).eachCell((cell) => {
+                cell.font = { bold: true }
+            });
+            res.setHeader("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+
+            res.setHeader("Content-Disposition", `attachment;filename=CustomerDetails.xlsx`);
+
+            return workbook.xlsx.write(res)
+                .then(function () {
+                    res.end()
+                });
+        } catch (exception) {
+            console.log(exception.message);
+        }
+
     }
 }
 

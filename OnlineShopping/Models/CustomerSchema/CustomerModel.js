@@ -32,6 +32,8 @@ const users = mongoose.Schema({
     {
         type: String
     }
+}, {
+    timestamps: true
 });
 
 let dbs = mongoose.model('customers', users);
