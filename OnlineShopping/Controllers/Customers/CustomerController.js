@@ -5,6 +5,8 @@ const Utils = require('../../Helpers/Utils');
 const cloudinary = require('cloudinary').v2;
 const jwt = require('jsonwebtoken');
 const excel = require('exceljs');
+const { Transporter, handlebarsOptions } = require('../../Helpers/EmailSender');
+const otpGenerator = require('otp-generator')
 
 
 function CustomerManagement() {
@@ -29,8 +31,8 @@ function CustomerManagement() {
                 });
             }
 
-            const checkMobile=await CustomerModel.findOne({CustomerMobile:CustomerMobile});
-            if(checkMobile){
+            const checkMobile = await CustomerModel.findOne({ CustomerMobile: CustomerMobile });
+            if (checkMobile) {
                 res.send({
                     "Message": "Phone Is Already Exists"
                 });
@@ -47,7 +49,8 @@ function CustomerManagement() {
                     CustomerEmail: CustomerEmail,
                     CustomerMobile: CustomerMobile,
                     CustomerPassword: await bcrypt.hash(CustomerPassword, 10),
-                    CustomerLogo: image.secure_url
+                    CustomerLogo: image.secure_url,
+                    OtpVerification: 0
                 });
                 const data = await NewCustomer.save({});
 
@@ -78,15 +81,38 @@ function CustomerManagement() {
                     res.send("Incorrect Password");
                 } else {
                     const userToken = await jwt.sign({ CustomerEmail: CustomerEmail }, "SecretKey", { expiresIn: "50s" });
-                    console.log(userToken);
-                    res.send({
-                        "token": userToken
-                    });
+                    let OTP = otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false, lowerCaseAlphabets: false });
+                    let otp = await CustomerModel.updateOne({ CustomerEmail: CustomerEmail }, { $set: { OtpVerification: OTP } });
+                    if (otp) {
+                        let mailOptions = ({
+                            from: '953622104072@ritrjpm.ac.in',
+                            to: "vigneshk24082000@gmail.com",
+                            subject: 'Sending Email using Node.js',
+                            template: 'OtpVerification',
+                            context: {
+                                title: "OTP Verification",
+                                text: OTP
+                            }
+                        });
+                        Transporter.sendMail(mailOptions, (err, result) => {
+                            if (err) {
+                                throw err;
+                            } else {
+                                console.log(result.response);
+                                res.render('CustomerInterface/OtpVerification');
+                            }
+                        });
+
+                    }
                 }
             }
         } catch (error) {
             console.log(error.message);
         }
+    }
+
+    this.otpVerify=async(req,res)=>{
+        let otp=await CustomerModel.findOne({})
     }
 
     this.CustomerProfile = async (req, res) => {

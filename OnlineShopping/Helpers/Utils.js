@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
-
 const cloudinary = require('cloudinary').v2;
+
 
 function Utils() {
     cloudinary.config({

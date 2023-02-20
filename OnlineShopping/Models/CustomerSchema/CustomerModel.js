@@ -31,6 +31,11 @@ const users = mongoose.Schema({
     CustomerLogo:
     {
         type: String
+    },
+    OtpVerification:
+    {
+        type: String,
+        required: true
     }
 }, {
     timestamps: true
