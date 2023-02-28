@@ -85,9 +85,9 @@ function CustomerManagement() {
                     let otp = await CustomerModel.updateOne({ CustomerEmail: CustomerEmail }, { $set: { OtpVerification: OTP } });
                     if (otp) {
                         let mailOptions = ({
-                            from: '953622104072@ritrjpm.ac.in',
-                            to: "vigneshk24082000@gmail.com",
-                            subject: 'Sending Email using Node.js',
+                            from: 'info@ippopay.com',
+                            to: 'vigneshk24082000@gmail.com',
+                            subject: 'Otp Verification',
                             template: 'OtpVerification',
                             context: {
                                 title: "OTP Verification",
@@ -96,7 +96,7 @@ function CustomerManagement() {
                         });
                         Transporter.sendMail(mailOptions, (err, result) => {
                             if (err) {
-                                throw err;
+                                console.log(err);
                             } else {
                                 console.log(result.response);
                                 res.render('CustomerInterface/OtpVerification');
@@ -111,8 +111,14 @@ function CustomerManagement() {
         }
     }
 
-    this.otpVerify=async(req,res)=>{
-        let otp=await CustomerModel.findOne({})
+    this.otpVerify = async (req, res) => {
+        let otpVerify = req.body.opt;
+        let otp = await CustomerModel.findOne({ OtpVerification: otpVerify });
+        if (!otp) {
+            res.send("Otp verification Failed");
+        } else {
+            res.send("Login SuccessFull");
+        }
     }
 
     this.CustomerProfile = async (req, res) => {
