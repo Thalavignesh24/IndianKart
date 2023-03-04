@@ -5,8 +5,8 @@ const Utils = require('../../Helpers/Utils');
 const cloudinary = require('cloudinary').v2;
 const jwt = require('jsonwebtoken');
 const excel = require('exceljs');
-const { Transporter, handlebarsOptions } = require('../../Helpers/EmailSender');
-const otpGenerator = require('otp-generator')
+const otpGenerator = require('otp-generator');
+const EmailSender = require('../../Helpers/EmailSender');
 
 
 function CustomerManagement() {
@@ -18,11 +18,15 @@ function CustomerManagement() {
         res.render('CustomerInterface/CustomerLogin');
     }
 
+    this.OtpPage = (req, res) => {
+        res.render('CustomerInterface/EmailOtpVerification');
+    }
+
     this.CustomerRegister = async (req, res) => {
 
         try {
             const { CustomerName, CustomerEmail, CustomerMobile, CustomerPassword } = req.body;
-            const CustomerLogo = req?.files?.CustomerLogo;
+            const CustomerLogo = req.files?.CustomerLogo;
 
             const checkEmail = await CustomerModel.findOne({ CustomerEmail: CustomerEmail });
             if (checkEmail) {
@@ -50,20 +54,44 @@ function CustomerManagement() {
                     CustomerMobile: CustomerMobile,
                     CustomerPassword: await bcrypt.hash(CustomerPassword, 10),
                     CustomerLogo: image.secure_url,
-                    OtpVerification: 0
+                    OtpVerification: otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false, lowerCaseAlphabets: false })
                 });
                 const data = await NewCustomer.save({});
-
+                const emailData =
+                {
+                    Name: CustomerName,
+                    Email: CustomerEmail,
+                    OTP: NewCustomer.OtpVerification
+                };
+                EmailSender.sendMailer(emailData);
                 if (!data) {
                     res.send("Failed To Register");
                 } else {
-                    res.redirect('http://localhost:3000/IndianKart/CustomerLogin');
+                    res.send("Register SuccessFully");
+                    //res.redirect('CustomerInterface/EmailOtpVerification')
                 }
             }
         } catch (error) {
             console.log(error.message);
         }
     }
+
+    this.otpVerify = async (req, res) => {
+        let otpVerify = req.body.otp;
+        if (!otpVerify) {
+            res.send("Please enter the otp");
+        }
+        //console.log(otpVerify);
+        let otp = await CustomerModel.findOne({ OtpVerification: otpVerify });
+        if (!otp) {
+            //console.log(otp);
+            res.send("Invalid Otp");
+        } else {
+            //console.log(otp);
+            res.send("Email Verified SuccessFully");
+        }
+    }
+
 
     this.CustomerLogin = async (req, res) => {
 
@@ -83,41 +111,12 @@ function CustomerManagement() {
                     const userToken = await jwt.sign({ CustomerEmail: CustomerEmail }, "SecretKey", { expiresIn: "50s" });
                     let OTP = otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false, lowerCaseAlphabets: false });
                     let otp = await CustomerModel.updateOne({ CustomerEmail: CustomerEmail }, { $set: { OtpVerification: OTP } });
-                    if (otp) {
-                        let mailOptions = ({
-                            from: 'info@ippopay.com',
-                            to: 'vigneshk24082000@gmail.com',
-                            subject: 'Otp Verification',
-                            template: 'OtpVerification',
-                            context: {
-                                title: "OTP Verification",
-                                text: OTP
-                            }
-                        });
-                        Transporter.sendMail(mailOptions, (err, result) => {
-                            if (err) {
-                                console.log(err);
-                            } else {
-                                console.log(result.response);
-                                res.render('CustomerInterface/OtpVerification');
-                            }
-                        });
-
+                    if (!otp) {
                     }
                 }
             }
         } catch (error) {
             console.log(error.message);
-        }
-    }
-
-    this.otpVerify = async (req, res) => {
-        let otpVerify = req.body.opt;
-        let otp = await CustomerModel.findOne({ OtpVerification: otpVerify });
-        if (!otp) {
-            res.send("Otp verification Failed");
-        } else {
-            res.send("Login SuccessFull");
         }
     }
 

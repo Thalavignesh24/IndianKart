@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp Verification</title>
+    <style>
+          h1{
+            color:darkmagenta;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .container{
+            background-color: aliceblue;
+            margin-left: 15%;
+            margin-right: 15%;
+            width:700px;
+            height: 300px;
+            margin-top: 5%;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 align="center">OTP Verification</h1>
+    </div>
+    <div class="container">
+        <form action="/IndianKart/OtpVerify" method="POST">
+            <input type="text" name="otp"/>
+            <input type="submit" name="submit">
+        </form>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
