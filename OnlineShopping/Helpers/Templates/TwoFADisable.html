@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        h1 {
+            color: red;
+
+        }
+
+        .container {
+            background-color: aliceblue;
+            margin-right: 15%;
+            width: 700px;
+            height: 300px;
+            margin-top: 5%;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .container h2 {
+            padding-top: 90px;
+            padding-right: 10px;
+            padding-left: 15px;
+            color:blue;
+        }
+
+        .container h3 {
+            color: teal;
+            padding-right: 10px;
+            padding-left: 15px;
+        }
+
+        span {
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+        }
+        .name{
+            color:red;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <div class="container">
+        <h2>
+            Dear
+            <span class="name">
+                <%= name %>
+            </span>
+        </h2>
+        <h3>
+            Please use OTP
+            <span>
+                <%= OTP %>
+            </span>
+            to inform you that your 2-factor authentication has been disabled on your account. Our system has detected that this feature has been turned off for your account 
+            on 27/02/2023 12:05PM
+
+        </h3>
+    </div>
+
+    <p>
+        <b>Regards,</b><br>
+        Ippo web 3 Team
+    </p>
+
+</body>
+
+</html>

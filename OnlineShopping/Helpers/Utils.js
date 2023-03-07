@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken');
 const cloudinary = require('cloudinary').v2;
-
+const { v4: uuidv4 } = require('uuid');
+const otpGenerator = require('otp-generator');
 
 function Utils() {
     cloudinary.config({
@@ -28,6 +29,12 @@ function Utils() {
                 });
             }
         }
+    }
+
+    this.uuid = () => uuidv4();
+
+    this.otp = () => {
+        return otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false, lowerCaseAlphabets: false });
     }
 }
 

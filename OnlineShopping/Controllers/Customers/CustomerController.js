@@ -1,11 +1,9 @@
+const CommonQuery = require('../../Helpers/CommonService');
 const CustomerModel = require('../../Models/CustomerSchema/CustomerModel');
 const bcrypt = require('bcrypt');
-const { v4: uuidv4 } = require('uuid');
 const Utils = require('../../Helpers/Utils');
 const cloudinary = require('cloudinary').v2;
 const jwt = require('jsonwebtoken');
-const excel = require('exceljs');
-const otpGenerator = require('otp-generator');
 const EmailSender = require('../../Helpers/EmailSender');
 
 
@@ -22,39 +20,37 @@ function CustomerManagement() {
         res.render('CustomerInterface/EmailOtpVerification');
     }
 
+    this.CustomerProfile = async (req, res) => {
+        res.render('CustomerProfile')
+    }
+
     this.CustomerRegister = async (req, res) => {
 
         try {
             const { CustomerName, CustomerEmail, CustomerMobile, CustomerPassword } = req.body;
             const CustomerLogo = req.files?.CustomerLogo;
+            const uuid = Utils.uuid();
 
-            const checkEmail = await CustomerModel.findOne({ CustomerEmail: CustomerEmail });
-            if (checkEmail) {
-                res.send({
-                    "Message": "Email Is Already Exists"
-                });
-            }
+            if (await CommonQuery.checkEmail(CustomerEmail))
+                return res.send("Email Is Already Exists");
 
-            const checkMobile = await CustomerModel.findOne({ CustomerMobile: CustomerMobile });
-            if (checkMobile) {
-                res.send({
-                    "Message": "Phone Is Already Exists"
-                });
-            }
+            if (await CommonQuery.checkMobile(CustomerMobile))
+                return res.send("Mobile is Already Exists");
 
             let image = await cloudinary.uploader.upload(CustomerLogo.tempFilePath);
 
-            if (!image) {
-                res.send("Failed To Load");
-            } else {
+            if (!image)
+                return res.send("Failed To Load");
+            else {
+                const otp = Utils.otp();
                 const NewCustomer = await new CustomerModel({
-                    CustomerId: uuidv4(),
+                    CustomerId: uuid,
                     CustomerName: CustomerName,
                     CustomerEmail: CustomerEmail,
                     CustomerMobile: CustomerMobile,
                     CustomerPassword: await bcrypt.hash(CustomerPassword, 10),
                     CustomerLogo: image.secure_url,
-                    OtpVerification: otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false, lowerCaseAlphabets: false })
+                    OtpVerification: otp
                 });
                 const data = await NewCustomer.save({});
                 const emailData =
@@ -63,16 +59,13 @@ function CustomerManagement() {
                     Email: CustomerEmail,
                     OTP: NewCustomer.OtpVerification
                 };
-                EmailSender.sendMailer(emailData);
-                if (!data) {
-                    res.send("Failed To Register");
-                } else {
-                    res.send("Register SuccessFully");
-                    //res.redirect('CustomerInterface/EmailOtpVerification')
-                }
+                EmailSender.sendMailer(emailData, "EV");
+                if (!data)
+                    return res.send("Failed To Register");
+                return res.send("Register SuccessFully");
             }
         } catch (error) {
-            console.log(error.message);
+            console.log(error);
         }
     }
 
@@ -92,72 +85,46 @@ function CustomerManagement() {
         }
     }
 
-
     this.CustomerLogin = async (req, res) => {
 
         try {
             const { CustomerEmail, CustomerPassword } = req.body;
-            let checkEmail = await CustomerModel.findOne({ CustomerEmail: CustomerEmail });
 
-            if (!checkEmail) {
-                res.send("Incorrect Email");
-            } else {
-                let password = checkEmail.CustomerPassword;
-                let checkPassword = await bcrypt.compare(CustomerPassword, password);
+            if (! await CommonQuery.checkEmail(CustomerEmail))
+                return res.send("Incorrect Email");
+            else {
+                let password = await CommonQuery.getPassword(CustomerEmail);
+                let checkPassword = await bcrypt.compare(CustomerPassword, password.CustomerPassword);
 
-                if (!checkPassword) {
-                    res.send("Incorrect Password");
-                } else {
+                if (!checkPassword)
+                    return res.send("Incorrect Password");
+                else {
                     const userToken = await jwt.sign({ CustomerEmail: CustomerEmail }, "SecretKey", { expiresIn: "50s" });
-                    let OTP = otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false, lowerCaseAlphabets: false });
-                    let otp = await CustomerModel.updateOne({ CustomerEmail: CustomerEmail }, { $set: { OtpVerification: OTP } });
-                    if (!otp) {
+                    let OTP = Utils.otp();
+                    let otp = await CommonQuery.OtpUpdate(CustomerEmail, OTP);
+                    EmailSender.sendMailer();
+
+                    if (!otp)
+                        return res.send('Invalid OTP');
+                    else {
+                        const CustomerOtp = await CommonQuery.getOTP(CustomerEmail);
+
+                        if (CustomerOtp.OtpVerification == OTP) {
+                            return res.send
+                                ({
+                                    message: "Login SuccessFully",
+                                    Token: userToken
+                                });
+                        } else
+                            return res.send("Otp Expired");
+
                     }
+
                 }
             }
         } catch (error) {
             console.log(error.message);
         }
-    }
-
-    this.CustomerProfile = async (req, res) => {
-        res.render('CustomerProfile')
-    }
-
-    this.CustomerExcel = async (req, res) => {
-        try {
-            const workbook = new excel.Workbook();
-            const worksheet = workbook.addWorksheet("customers");
-            worksheet.columns = [
-                { header: "S.No", key: "sno" },
-                { header: "CustomerName", key: "CustomerName" },
-                { header: "CustomerEmail", key: "CustomerEmail" },
-                { header: "MobileNumber", key: "CustomerMobile" },
-                { header: "CustomerPassword", key: "CustomerPassword" }
-            ];
-            let count = 1;
-            const ct = await (CustomerModel.find());
-            console.log(ct);
-            ct.forEach((ct) => {
-                ct.sno = count;
-                worksheet.addRow(ct);
-                count++;
-            });
-            worksheet.getRow(1).eachCell((cell) => {
-                cell.font = { bold: true }
-            });
-            res.setHeader("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
-
-            res.setHeader("Content-Disposition", `attachment;filename=CustomerDetails.xlsx`);
-
-            return workbook.xlsx.write(res)
-                .then(function () {
-                    res.end()
-                });
-        } catch (exception) {
-            console.log(exception.message);
-        }
-
     }
 }
 

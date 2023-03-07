@@ -13,7 +13,9 @@ app.use(express.static(path.join(__dirname, 'Public')));
 app.set('views', path.join(__dirname, 'Frontend'));
 app.set('view engine', 'ejs');
 
-app.use('/IndianKart', Router.CustomerRoutes,Router.AdminRoutes);
+app.use('/IndianKart', Router.CustomerRoutes);
+
+app.use('/IndianKart/Admin/', Router.AdminRoutes);
 
 app.listen(3000, (message) => {
     console.log("Server Is Running");

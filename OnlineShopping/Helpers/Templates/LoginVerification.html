@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        h1 {
+            color: red;
+
+        }
+
+        .container {
+            background-color: black;
+            margin-right: 15%;
+            width: 700px;
+            height: 300px;
+            margin-top: 5%;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .container h2 {
+            padding-top: 90px;
+            padding-right: 10px;
+            padding-left: 15px;
+            color: blue;
+        }
+
+        .container h3 {
+            color: teal;
+            padding-right: 10px;
+            padding-left: 15px;
+        }
+
+        span {
+            color: chartreuse;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+        }
+
+        .name {
+            color: red;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>
+            Dear
+            <span class="name">
+                <%= name %>
+            </span>
+        </h2>
+        <h3>
+            We are sending you this email to provide you with your One-Time Password (OTP) for your already enabled
+            2-factor authentication feature.
+            Please use OTP
+            <span>
+                <%= OTP %>
+            </span>
+            to verify and proceed further. If you have any issues, write an email to support@ippoweb3.io
+        </h3>
+    </div>
+
+    <p>
+        <b>Regards,</b><br>
+        Ippo web 3 Team
+    </p>
+
+</body>
+
+</html>
