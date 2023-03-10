@@ -47,7 +47,18 @@ const users = mongoose.Schema({
     VerifiedStatus:
     {
         type: String
-    }
+    },
+    DeviceDetails:
+    {
+        type: Object,
+        required: true
+    },
+    GadgetsDetails: [
+        {
+            type:Object
+        }
+    ]
+
 }, {
     timestamps: true
 });

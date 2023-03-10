@@ -14,6 +14,9 @@
 
         .container {
             background-color: aliceblue;
+            background-image: url("https://res.cloudinary.com/dfgwcxpwt/image/upload/v1678451598/da0uxqp9cqbegyfksvs1.jpg");
+            background-size: cover;
+            background-attachment: fixed;
             margin-right: 15%;
             width: 700px;
             height: 300px;
@@ -46,6 +49,12 @@
             font-style: italic;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
+
+        #device {
+            color: rgb(46, 243, 7);
+            font-family: cursive;
+            background-color: black;
+        }
     </style>
 </head>
 
@@ -63,7 +72,10 @@
                 <%= OTP %>
             </span>
             to verify your email address to proceed further. If you have any issues, write an
-            email to support@Ippoweb3.io
+            email to support@Ippoweb3.io<br>
+            <span id="device">
+                <%= DeviceName %><br>
+            </span>
         </h3>
     </div>
 

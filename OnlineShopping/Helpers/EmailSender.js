@@ -12,32 +12,27 @@ let Transporter = nodemailer.createTransport({
 });
 
 module.exports.sendMailer = async function (emailData, type) {
-    var attachments = [];
     let template = await TemplateModel.findOne({ EmailType: type });
     if (template) {
-        var client = new ElasticMail('c802e30d-7ea8-4ecf-b993-1ba53959f872');
-
-        let directory = __dirname + '/Templates/'+template.FileName;
+        let directory = __dirname + '/Templates/' + template.FileName;
 
         ejs.renderFile(directory, emailData, function (err, html) {
             if (err) {
                 console.log(err);
             }
             let message = {
-                from: "info@ippopay.com",
+                from: "vignesh.k@ippopay.com",
                 fromName: "Email Verification",
                 subject: template.EmailSubject,
                 msgTo: emailData.Email,
                 bodyHtml: html
             };
-            client.send(message, attachments).then((mail) => {
-                if (!mail)
-                    console.log("Failed");
-                let results = JSON.parse(mail);
-                if (results.success == true) {
-                    console.log(true);
+            console.log(message);
+            Transporter.sendMail(message, function (error, info) {
+                if (error) {
+                    console.log(error);
                 } else {
-                    console.log(false);
+                    console.log('Email sent: ' + info.response);
                 }
             });
         });

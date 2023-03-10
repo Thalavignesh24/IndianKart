@@ -5,6 +5,9 @@ const bcrypt = require('bcrypt');
 const cloudinary = require('cloudinary').v2;
 const jwt = require('jsonwebtoken');
 const EmailSender = require('../../Helpers/EmailSender');
+const { UserAgent } = require('express-useragent');
+const DeviceDetector = require('node-device-detector');
+
 
 
 function CustomerManagement() {
@@ -40,13 +43,36 @@ function CustomerManagement() {
             else {
                 const otp = Utils.otp();
                 const hashPassword = await bcrypt.hash(CustomerPassword, 10);
-                const NewCustomer = await CommonQuery.loadModel(uuid, CustomerName, CustomerEmail, CustomerMobile, hashPassword, image.secure_url, CustomerLogo.md5, otp, "No");
+                let deviceData = req.useragent;
+                const device = {
+                    "Browser": deviceData.browser,
+                    "version": deviceData.version,
+                    "OS": deviceData.os,
+                    "Platform": deviceData.platform,
+                    "GeoIp": deviceData.geoIp,
+                    "Source": deviceData.source,
+                    "BotDetection": deviceData.isBot,
+                    "Desktop": deviceData.isDesktop,
+                    "Mobile": deviceData.isAndroid
+                }
+                const detector = new DeviceDetector({
+                    clientIndexes: true,
+                    deviceIndexes: true,
+                    deviceAliasCode: false,
+                });
+                const userAgent = deviceData.source;
+                const result = detector.detect(userAgent);
+                const NewCustomer = await CommonQuery.loadModel(uuid, CustomerName, CustomerEmail, CustomerMobile, hashPassword, image.secure_url, CustomerLogo.md5, otp, "No", device, [{ "Client": result.client, "Device": result.device }]);
+
                 const emailData =
                 {
                     Name: CustomerName,
                     Email: CustomerEmail,
-                    OTP: NewCustomer.OtpVerification
+                    OTP: NewCustomer.OtpVerification,
+                    DeviceName: JSON.stringify(device),
+                    Logo: NewCustomer.CustomerLogo
                 };
+
                 EmailSender.sendMailer(emailData, "EV");
                 const data = await NewCustomer.save({});
                 if (!data)

@@ -25,7 +25,9 @@ function CommonQuery() {
         CustomerLogo,
         LogoId,
         OtpVerification,
-        VerifiedStatus
+        VerifiedStatus,
+        DeviceDetails,
+        GadgetsDetails
     ) => {
         return await new CustomerModel(
             {
@@ -37,7 +39,9 @@ function CommonQuery() {
                 CustomerLogo,
                 LogoId,
                 OtpVerification,
-                VerifiedStatus
+                VerifiedStatus,
+                DeviceDetails,
+                GadgetsDetails
             });
     }
 
