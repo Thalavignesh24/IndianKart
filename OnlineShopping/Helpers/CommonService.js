@@ -12,6 +12,10 @@ function CommonQuery() {
         return await CustomerModel.findOne({ CustomerMobile: CustomerMobile });
     }
 
+    this.checkImage = async (logoId) => {
+        return await CustomerModel.findOne({ LogoId: logoId });
+    }
+
     this.loadModel = async (
         CustomerId,
         CustomerName,
@@ -19,7 +23,9 @@ function CommonQuery() {
         CustomerMobile,
         CustomerPassword,
         CustomerLogo,
-        OtpVerification
+        LogoId,
+        OtpVerification,
+        VerifiedStatus
     ) => {
         return await new CustomerModel(
             {
@@ -29,14 +35,28 @@ function CommonQuery() {
                 CustomerMobile,
                 CustomerPassword,
                 CustomerLogo,
-                OtpVerification
+                LogoId,
+                OtpVerification,
+                VerifiedStatus
             });
     }
+
+
+    //otp verification or account verification
+
+    this.otpVerify = async (otp) => {
+        return await CustomerModel.findOne({ OtpVerification: otp });
+    }
+
+    this.updateStatus = async (otp, status) => {
+        return await CustomerModel.updateOne({ OtpVerification: otp }, { $set: { VerifiedStatus: status } });
+    }
+
 
     //Customer Login
 
     this.getPassword = async (CustomerEmail) => {
-        return await CustomerModel.findOne({ CustomerEmail: CustomerEmail }, { CustomerPassword: 1, _id: 0 });
+        return await CustomerModel.findOne({ CustomerEmail: CustomerEmail }, { CustomerPassword: 1, CustomerName: 1, VerifiedStatus: 1, _id: 0 });
     }
 
     this.getOTP = async (CustomerEmail) => {
@@ -45,6 +65,10 @@ function CommonQuery() {
 
     this.OtpUpdate = async (CustomerEmail, OTP) => {
         return await CustomerModel.updateOne({ CustomerEmail: CustomerEmail }, { $set: { OtpVerification: OTP } });
+    }
+
+    this.checkStatus = async (CustomerEmail, status) => {
+        return await CustomerModel.findOne({ CustomerEmail: CustomerEmail, VerifiedStatus: status });
     }
 
     //Customer Details

@@ -12,21 +12,19 @@ function Utils() {
     });
 
     this.verifyToken = async (req, res, next) => {
-        const token = req.body.token || req.query.token;
+        const token = req.headers.token;
         if (!token) {
-            res.send("Token Required");
+            console.log("Token is required");
+            return res.redirect("http://localhost:3000/IndianKart/CustomerLogin");
         } else {
             try {
                 const auth = await jwt.verify(token, "SecretKey");
-                // console.log(auth);
                 if (auth) {
                     return next();
                 }
             } catch (error) {
                 console.log(error.message);
-                res.send({
-                    "Message": error.message
-                });
+                return res.redirect("http://localhost:3000/IndianKart/CustomerLogin");
             }
         }
     }

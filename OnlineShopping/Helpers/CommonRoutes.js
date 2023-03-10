@@ -1,6 +1,6 @@
 
-function CommonRoutes(){
-    this.CustomerRoutes=require('../Routers/CustomerRoutes/CustomerRouter');
-    this.AdminRoutes=require('../Routers/AdminRoutes/AdminRouter');
+function CommonRoutes() {
+    this.CustomerRoutes = require('../Routers/CustomerRoutes/CustomerRouter');
+    this.AdminRoutes = require('../Routers/AdminRoutes/AdminRouter');
 }
-module.exports=new CommonRoutes();
+module.exports = new CommonRoutes();

@@ -9,21 +9,13 @@ const EmailSender = require('../../Helpers/EmailSender');
 
 function CustomerManagement() {
 
-    // this.CustomerRegisterPage = (req, res) => {
-    //     res.render('CustomerInterface/CustomerRegister');
-    // }
+    this.CustomerRegisterPage = (req, res) => {
+        return res.render('CustomerInterface/CustomerRegister');
+    }
 
-    // this.CustomerLoginPage = (req, res) => {
-    //     res.render('CustomerInterface/CustomerLogin');
-    // }
-
-    // this.OtpPage = (req, res) => {
-    //     res.render('CustomerInterface/EmailOtpVerification');
-    // }
-
-    // this.CustomerProfile = async (req, res) => {
-    //     res.render('CustomerProfile')
-    // }
+    this.CustomerLoginPage = (req, res) => {
+        res.render('CustomerInterface/CustomerLogin');
+    }
 
     this.CustomerRegister = async (req, res) => {
 
@@ -38,6 +30,9 @@ function CustomerManagement() {
             if (await CommonQuery.checkMobile(CustomerMobile))
                 return res.send("Mobile is Already Exists");
 
+            if (await CommonQuery.checkImage(CustomerLogo.md5))
+                return res.send("This profile picture is already used");
+
             let image = await cloudinary.uploader.upload(CustomerLogo.tempFilePath);
 
             if (!image)
@@ -45,7 +40,7 @@ function CustomerManagement() {
             else {
                 const otp = Utils.otp();
                 const hashPassword = await bcrypt.hash(CustomerPassword, 10);
-                const NewCustomer = await CommonQuery.loadModel(uuid, CustomerName, CustomerEmail, CustomerMobile, hashPassword, image.secure_url, otp);
+                const NewCustomer = await CommonQuery.loadModel(uuid, CustomerName, CustomerEmail, CustomerMobile, hashPassword, image.secure_url, CustomerLogo.md5, otp, "No");
                 const emailData =
                 {
                     Name: CustomerName,
@@ -56,26 +51,23 @@ function CustomerManagement() {
                 const data = await NewCustomer.save({});
                 if (!data)
                     return res.send("Failed To Register");
-                return res.send("Register SuccessFully");
+                return res.render("CustomerInterface/EmailOtpVerification");
             }
         } catch (error) {
-            console.log(error);
+            console.log(error.message);
         }
     }
 
     this.otpVerify = async (req, res) => {
         let otpVerify = req.body.otp;
-        if (!otpVerify) {
+        if (!otpVerify)
             res.send("Please enter the otp");
-        }
-        //console.log(otpVerify);
-        let otp = await CustomerModel.findOne({ OtpVerification: otpVerify });
-        if (!otp) {
-            //console.log(otp);
-            res.send("Invalid Otp");
-        } else {
-            //console.log(otp);
-            res.send("Email Verified SuccessFully");
+        let otp = await CommonQuery.otpVerify(otpVerify);
+        if (!otp)
+            return res.send("Invalid Otp");
+        else {
+            await CommonQuery.updateStatus(otp.OtpVerification, "Yes");
+            return res.redirect("http://localhost:3000/IndianKart/CustomerLogin");
         }
     }
 
@@ -93,24 +85,24 @@ function CustomerManagement() {
                 if (!checkPassword)
                     return res.send("Incorrect Password");
                 else {
-                    const userToken = await jwt.sign({ CustomerEmail: CustomerEmail }, "SecretKey", { expiresIn: "50s" });
-                    let OTP = Utils.otp();
-                    let otp = await CommonQuery.OtpUpdate(CustomerEmail, OTP);
-                    EmailSender.sendMailer();
-
-                    if (!otp)
-                        return res.send('Invalid OTP');
-                    else {
-                        const CustomerOtp = await CommonQuery.getOTP(CustomerEmail);
-
-                        if (CustomerOtp.OtpVerification == OTP) {
-                            return res.send
-                                ({
-                                    message: "Login SuccessFully",
-                                    Token: userToken
-                                });
-                        } else
-                            return res.send("Otp Expired");
+                    let Verify = await CommonQuery.checkStatus(CustomerEmail, "Yes");
+                    if (Verify) {
+                        const userToken = await jwt.sign({ CustomerEmail: CustomerEmail }, "SecretKey", { expiresIn: "2h" });
+                        return res.send
+                            ({
+                                message: "Login SuccessFully",
+                                Token: userToken
+                            });
+                    } else {
+                        let OTP = Utils.otp();
+                        let otp = await CommonQuery.OtpUpdate(CustomerEmail, OTP);
+                        const emailData = {
+                            Name: password.CustomerName,
+                            Email: CustomerEmail,
+                            OTP: OTP
+                        }
+                        EmailSender.sendMailer(emailData, 'LV');
+                        return res.render("CustomerInterface/EmailOtpVerification");
                     }
                 }
             }

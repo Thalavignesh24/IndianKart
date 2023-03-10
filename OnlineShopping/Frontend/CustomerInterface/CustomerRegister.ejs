@@ -9,18 +9,14 @@
 
     <style>
         body {
-            background-image: url('/Images/background.jpg');
-            background-size: cover;
-            background-attachment: fixed;
+            background-color: aliceblue;
         }
 
         .header {
-            margin-top: 8%;
-            background-color: midnightblue;
             width: 600px;
             height: 100px;
             margin-left: 27%;
-            color: beige;
+            color: black;
             border-top-right-radius: 20px;
             border-top-left-radius: 20px;
         }
@@ -31,14 +27,17 @@
         }
 
         .container {
-            background-color: black;
+            background-color: white;
             width: 600px;
-            height: 500px;
+            height: 600px;
             margin-left: 27%;
-            color: beige;
+            color: black;
+            padding-top: 25px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
         }
 
         .container label {
@@ -46,21 +45,33 @@
         }
 
         .form-control {
-            margin-top: 3%;
+            margin-top: 2%;
             margin-left: 15%;
             width: 400px;
             height: 40px;
-            border-radius: 10px;
-            border-color: black;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: gray;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
 
+        .form-control2{
+            margin-top: 3%;
+            margin-left: 15%;
+        }
+
         .form-control1 {
-            margin-left: 53%;
-            width: 180px;
+            margin-left: 15%;
+            width: 400px;
             height: 40px;
-            background-color: greenyellow;
+            background-color: red;
             border-radius: 15px;
+            font-size: 20px;
+            color: white;
+        }
+
+        p {
+            margin-left: 15%;
         }
     </style>
 
@@ -69,19 +80,24 @@
 <body>
 
     <div class="header">
-        <h1 align="center">Registration Form</h1>
+        <h1 align="center">Create Your Account</h1>
     </div>
 
     <div class="container">
         <form action="/IndianKart/Register" enctype="multipart/form-data" method="POST">
+            <label>Full name:</label>
             <input type="text" name="CustomerName" placeholder="Your Name" class="form-control"><br><br>
+            <label>Email:</label>
             <input type="text" name="CustomerEmail" placeholder="Your Email" class="form-control"><br><br>
+            <label>Mobile number:</label>
             <input type="text" name="CustomerMobile" placeholder="Your MobileNumber" class="form-control"><br><br>
+            <label>Password:</label>
             <input type="text" name="CustomerPassword" placeholder="Your Password" class="form-control"><br><br>
-            <label>Your Profile</label><br>
-            <input type="file" name="CustomerLogo" class="form-control"><br><br>
-            <input type="submit" name="submit" class="form-control1" value="Register">
+            <label>Your Profile:</label><br>
+            <input type="file" name="CustomerLogo" class="form-control2"><br><br>
+            <input type="submit" name="submit" class="form-control1" value="SIGN UP">
         </form>
+        <p>Already a user ? please <a href="http://localhost:3000/IndianKart/CustomerLogin">Login</a> here</p>
     </div>
 
     <div class="footer"></div>

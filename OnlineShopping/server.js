@@ -13,6 +13,8 @@ app.use(express.static(path.join(__dirname, 'Public')));
 app.set('views', path.join(__dirname, 'Frontend'));
 app.set('view engine', 'ejs');
 
+//app.use("/IndianKart", require("./Routers/CustomerRoutes/CustomerRouter"));
+
 app.use('/IndianKart', Router.CustomerRoutes);
 
 app.use('/IndianKart/Admin/', Router.AdminRoutes);

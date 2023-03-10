@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017/IndianKart");
+let dbconnect = mongoose.connect("mongodb://localhost:27017/IndianKart");
 
+if (!dbconnect) {
+    console.log("Database Connection Failed");
+}
 const users = mongoose.Schema({
     CustomerId:
     {
@@ -28,6 +31,10 @@ const users = mongoose.Schema({
         type: String,
         required: true
     },
+    LogoId:
+    {
+        type: String
+    },
     CustomerLogo:
     {
         type: String
@@ -36,11 +43,15 @@ const users = mongoose.Schema({
     {
         type: String,
         required: true
+    },
+    VerifiedStatus:
+    {
+        type: String
     }
 }, {
     timestamps: true
 });
 
 let dbs = mongoose.model('customers', users);
-
 module.exports = dbs;
+console.log("Database connected!")
