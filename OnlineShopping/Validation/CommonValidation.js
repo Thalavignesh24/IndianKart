@@ -25,7 +25,7 @@ function validation() {
     }
 
     this.checkPassword = (field, messager) => {
-        return check(field).trim().notEmpty().withMessage("Please enter your " + messager).isLength({ max: 8, min: 8 }).withMessage("Password must be eight characters");
+        return check(field).trim().notEmpty().withMessage("Please enter your " + messager).isLength({ min: 8 }).withMessage("Password must be minimum eight characters");
     }
 }
 
