@@ -14,7 +14,6 @@
 
         .container {
             background-color: aliceblue;
-            background-image: url("https://res.cloudinary.com/dfgwcxpwt/image/upload/v1678451598/da0uxqp9cqbegyfksvs1.jpg");
             background-size: cover;
             background-attachment: fixed;
             margin-right: 15%;
@@ -63,18 +62,18 @@
         <h2>
             Dear
             <span class="name">
-                <%= Name %>
+                {{Name}}
             </span>
         </h2>
         <h3>
             Please use OTP
             <span>
-                <%= OTP %>
+                {{OTP}}
             </span>
             to verify your email address to proceed further. If you have any issues, write an
             email to support@Ippoweb3.io<br>
             <span id="device">
-                <%= DeviceName %><br>
+                {{DeviceName}}<br>
             </span>
         </h3>
     </div>

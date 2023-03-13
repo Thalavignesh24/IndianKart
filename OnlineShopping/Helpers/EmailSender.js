@@ -1,42 +1,54 @@
+
+const path = require('path');
 const nodemailer = require('nodemailer');
+const hbs = require('nodemailer-express-handlebars');
 const ejs = require('ejs');
-const ElasticMail = require('nodelastic');
 const TemplateModel = require('../Models/TemplateSchema/TemplateModel');
 
-let Transporter = nodemailer.createTransport({
+var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: 'vignesh.k@ippopay.com',
-        pass: 'Vigneshoffice@2000',
+        pass: 'Vigneshoffice@2000'
     }
 });
 
-module.exports.sendMailer = async function (emailData, type) {
-    let template = await TemplateModel.findOne({ EmailType: type });
-    if (template) {
-        let directory = __dirname + '/Templates/' + template.FileName;
+const handlebarsOptions = ({
+    viewEngine: {
+        extName: ".html",
+        partialsDir: path.resolve('./Helpers/Templates'),
+        defaultLayout: false,
+    },
+    viewPath: path.resolve('./Helpers/Templates'),
+    extName: ".html",
+});
 
-        ejs.renderFile(directory, emailData, function (err, html) {
-            if (err) {
-                console.log(err);
+transporter.use('compile', hbs(handlebarsOptions));
+module.exports.sendMailer = async (emailData, type) => {
+    console.log(emailData);
+    let template = await TemplateModel.findOne({ "EmailType": type });
+    if (template) {
+        var mailOptions = {
+            from: 'youremail@gmail.com',
+            to: emailData.Email,
+            subject: template.EmailSubject,
+            template: template.FileName,
+            context: {
+                Name: emailData.Name,
+                OTP: emailData.OTP,
+                DeviceName: emailData.DeviceName
             }
-            let message = {
-                from: "vignesh.k@ippopay.com",
-                fromName: "Email Verification",
-                subject: template.EmailSubject,
-                msgTo: emailData.Email,
-                bodyHtml: html
-            };
-            console.log(message);
-            Transporter.sendMail(message, function (error, info) {
-                if (error) {
-                    console.log(error);
-                } else {
-                    console.log('Email sent: ' + info.response);
-                }
-            });
+        }
+        transporter.sendMail(mailOptions, function (error, info) {
+            if (error) {
+                console.log(error);
+            } else {
+                console.log('Email sent: ' + info.response);
+            }
         });
-    } else {
-        return false;
+
     }
-}
+};
+
+
+

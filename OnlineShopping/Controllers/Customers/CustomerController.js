@@ -70,7 +70,6 @@ function CustomerManagement() {
                     Email: CustomerEmail,
                     OTP: NewCustomer.OtpVerification,
                     DeviceName: JSON.stringify(device),
-                    Logo: NewCustomer.CustomerLogo
                 };
 
                 EmailSender.sendMailer(emailData, "EV");
@@ -114,6 +113,8 @@ function CustomerManagement() {
                     let Verify = await CommonQuery.checkStatus(CustomerEmail, "Yes");
                     if (Verify) {
                         const userToken = await jwt.sign({ CustomerEmail: CustomerEmail }, "SecretKey", { expiresIn: "2h" });
+                        this.userToken=userToken;
+                        console.log(this.userToken);
                         return res.send
                             ({
                                 message: "Login SuccessFully",
@@ -138,6 +139,8 @@ function CustomerManagement() {
     }
 
     this.CustomerViewDetails = async (req, res) => {
+        const token=this.userToken;
+        console.log(token);
         const CustomerData = await CommonQuery.viewData(req.params.CustomerId);
         if (!CustomerData)
             return res.send("No data");
