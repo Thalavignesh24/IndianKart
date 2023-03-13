@@ -139,8 +139,6 @@ function CustomerManagement() {
     }
 
     this.CustomerViewDetails = async (req, res) => {
-        const token = this.userToken;
-        console.log(token);
         const CustomerData = await CommonQuery.viewData(req.params.CustomerId);
         if (!CustomerData)
             return res.send("No data");
