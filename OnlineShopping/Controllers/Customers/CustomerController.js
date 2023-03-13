@@ -113,7 +113,7 @@ function CustomerManagement() {
                     let Verify = await CommonQuery.checkStatus(CustomerEmail, "Yes");
                     if (Verify) {
                         const userToken = await jwt.sign({ CustomerEmail: CustomerEmail }, "SecretKey", { expiresIn: "2h" });
-                        this.userToken=userToken;
+                        this.userToken = userToken;
                         console.log(this.userToken);
                         return res.send
                             ({
@@ -139,8 +139,6 @@ function CustomerManagement() {
     }
 
     this.CustomerViewDetails = async (req, res) => {
-        const token=this.userToken;
-        console.log(token);
         const CustomerData = await CommonQuery.viewData(req.params.CustomerId);
         if (!CustomerData)
             return res.send("No data");
