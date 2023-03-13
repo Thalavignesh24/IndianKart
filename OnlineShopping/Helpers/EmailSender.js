@@ -12,7 +12,7 @@ var transporter = nodemailer.createTransport({
         pass: 'Vigneshoffice@2000'
     }
 });
-console.log(path.resolve('./Templates'));
+
 const handlebarsOptions = ({
     viewEngine: {
         extName: ".html",
@@ -23,7 +23,6 @@ const handlebarsOptions = ({
     extName: ".html",
 });
 
-//console.log(handlebarsOptions);
 transporter.use('compile', hbs(handlebarsOptions));
 module.exports.sendMailer = async (emailData, type) => {
     console.log(emailData);
@@ -50,16 +49,6 @@ module.exports.sendMailer = async (emailData, type) => {
 
     }
 };
-
-// transporter.sendMail(mailOptions, function (error, info) {
-//     if (error) {
-//         console.log(error);
-//     } else {
-//         console.log('Email sent: ' + info.response);
-//     }
-// });
-
-
 
 
 
