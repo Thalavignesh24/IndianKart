@@ -24,8 +24,8 @@ const handlebarsOptions = ({
 });
 
 transporter.use('compile', hbs(handlebarsOptions));
-module.exports.sendMailer = async (emailData, type) => {
-    console.log(emailData);
+module.exports.sendMailer = async (res, emailData, type) => {
+
     let template = await TemplateModel.findOne({ "EmailType": type });
     if (template) {
         var mailOptions = {
@@ -43,10 +43,11 @@ module.exports.sendMailer = async (emailData, type) => {
             if (error) {
                 console.log(error);
             } else {
-                console.log('Email sent: ' + info.response);
+                console.log('Please check your email for otp');
             }
         });
-
+    } else {
+        console.log("Email is not verified");
     }
 };
 
