@@ -12,6 +12,8 @@ const handleRequest = (req, res, next) => {
 
 function validation() {
 
+    //Customer Register
+
     this.checkName = (field, messager) => {
         return check(field).trim().notEmpty().withMessage("Please enter your " + messager);
     }
@@ -27,6 +29,18 @@ function validation() {
     this.checkPassword = (field, messager) => {
         return check(field).trim().notEmpty().withMessage("Please enter your " + messager).isLength({ min: 8 }).withMessage("Password must be minimum eight characters");
     }
+
+    //Product Register
+
+    this.checkQty = (field, messager) => {
+        return check(field).trim().notEmpty().withMessage("Please enter your " + messager).isNumeric().withMessage('Please enter valid quantity');
+    }
+
+    this.checkAmt = (field, messager) => {
+        return check(field).trim().notEmpty().withMessage("Please enter your " + messager).isDecimal().withMessage('Please enter valid amount');
+    }
+
+
 }
 
 let validator = new validation();

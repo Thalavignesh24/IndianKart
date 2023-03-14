@@ -1,9 +1,13 @@
 const CustomerModel = require('../../Models/CustomerSchema/CustomerModel');
 const TemplateModel = require('../../Models/TemplateSchema/TemplateModel');
+const cloudinary = require('cloudinary').v2;
+const AdminQuery = require('../../Helpers/AdminCommonService');
 const excel = require('exceljs');
+const Utlis = require('../../Helpers/Utils');
 
 
 function AdminManagement() {
+
     this.CustomerExcel = async (req, res) => {
         try {
             const workbook = new excel.Workbook();
@@ -34,15 +38,6 @@ function AdminManagement() {
                         path: `${path}/users.xlsx`,
                     });
                 });
-
-            // res.setHeader("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
-
-            // res.setHeader("Content-Disposition", `attachment;filename=CustomerDetails.xlsx`);
-
-            // return workbook.xlsx.write(res)
-            //     .then(function () {
-            //         res.end()
-            //     });
         } catch (exception) {
             console.log(exception.message);
         }
@@ -63,6 +58,48 @@ function AdminManagement() {
 
         } catch (error) {
             console.log(error.message);
+        }
+    }
+
+    this.addProducts = async (req, res) => {
+
+        try {
+            let { ProductName, ProductQuantity, ProductAmount } = req.body;
+            let image = req.files?.ProductImage;
+
+            if (!image || image == "" || image == undefined) return res.send({ "errorMessage": "Please upload the Product image" });
+
+            if (await AdminQuery.checkName(ProductName)) return res.send({ "errorMessage": "Product Name already given" });
+
+            if (await AdminQuery.checkImage(image.md5)) return res.send({ "errorMessage": "ProductImage already Added" });
+
+            let ProductImage = await cloudinary.uploader.upload(image.tempFilePath);
+
+            let NewProducts = await AdminQuery.addProducts(Utlis.uuid(), ProductName, ProductQuantity, ProductAmount, ProductImage.etag, ProductImage.secure_url);
+
+            let productdata = NewProducts.save();
+
+            if (productdata) {
+                return res.send({ "Message": "Product added Successfully" });
+            } else {
+                return res.send({ "Message": "Failed Yo Add products" });
+            }
+        } catch (e) {
+            return res.send({ "catchMessage": e.message });
+        }
+    }
+
+    this.deleteProducts = async (req, res) => {
+
+        try {
+            let { ProductId } = req.params;
+            let productDelete = await AdminQuery.deleteProducts(ProductId);
+
+            if (!productDelete) return res.send({ errorMessage: "No Data found" });
+            res.send({ Message: "Product Deleted SuccessFully" });
+        } catch (e) {
+            console.log(e);
+            return res.send({ "catchMessage": e.message });
         }
     }
 }
