@@ -26,6 +26,11 @@ const products = mongoose.Schema({
         type: String,
         required: true
     },
+    ProductDescription:
+    {
+        type: String,
+        required: true
+    },
     LogoId:
     {
         type: String
@@ -34,6 +39,12 @@ const products = mongoose.Schema({
     {
         type: String
     },
+    status:
+    {
+        type: String,
+        enum: ['active', 'inactive'],
+        required: true
+    }
 }, {
     timestamps: true
 });

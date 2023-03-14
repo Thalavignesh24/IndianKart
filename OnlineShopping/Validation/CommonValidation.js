@@ -40,7 +40,13 @@ function validation() {
         return check(field).trim().notEmpty().withMessage("Please enter your " + messager).isDecimal().withMessage('Please enter valid amount');
     }
 
+    this.checkDescription = (field, messager) => {
+        return check(field).trim().notEmpty().withMessage("Please enter your " + messager);
+    }
 
+    this.checkId = (field, messager) => {
+        return check(field).trim().notEmpty().withMessage("Please enter your " + messager);
+    }
 }
 
 let validator = new validation();

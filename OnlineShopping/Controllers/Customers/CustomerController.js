@@ -27,7 +27,7 @@ function CustomerManagement() {
             const CustomerLogo = req.files?.CustomerLogo;
             const uuid = Utils.uuid();
 
-            if (!CustomerLogo || CustomerLogo == "" || CustomerLogo == undefined) return res.send({ "errorMessage": "Please upload the Profile Image" })
+            if (Utils.empty(CustomerLogo)) return res.send({ "errorMessage": "Please upload the Profile Image" })
 
             if (await CommonQuery.checkEmail(CustomerEmail)) return res.send("Email Is Already Exists");
 
@@ -77,8 +77,8 @@ function CustomerManagement() {
                     return res.send("Failed To Register");
                 return res.render("CustomerInterface/EmailOtpVerification");
             }
-        } catch (error) {
-            console.log(error.message);
+        } catch (e) {
+            return res.send({ "catchMessage": e.message });
         }
     }
 
@@ -86,12 +86,10 @@ function CustomerManagement() {
         try {
 
             let otpVerify = req.body.otp;
-            if (!otpVerify)
-                res.send("Please enter the otp");
+            if (Utils.empty(otpVerify)) return res.send("Please enter the otp");
             let otp = await CommonQuery.otpVerify(otpVerify);
 
-            if (!otp)
-                return res.send("Invalid Otp");
+            if (Utils.empty(otp)) return res.send("Invalid Otp");
             else {
                 await CommonQuery.updateStatus(otp.OtpVerification, "Yes");
                 return res.redirect("http://localhost:3000/IndianKart/CustomerLogin");
@@ -113,7 +111,7 @@ function CustomerManagement() {
                 let password = await CommonQuery.getPassword(CustomerEmail);
                 let checkPassword = await bcrypt.compare(CustomerPassword, password.CustomerPassword);
 
-                if (!checkPassword)
+                if (Utils.empty(checkPassword))
                     return res.send("Incorrect Password");
                 else {
                     let Verify = await CommonQuery.checkStatus(CustomerEmail, "Yes");
@@ -139,15 +137,15 @@ function CustomerManagement() {
                     }
                 }
             }
-        } catch (error) {
-            console.log(error.message);
+        } catch (e) {
+            return res.send({ "catchMessage": e.message });
         }
     }
 
     this.CustomerViewDetails = async (req, res) => {
         try {
             const CustomerData = await CommonQuery.viewData(req.params.CustomerId);
-            if (!CustomerData)
+            if (Utils.empty(CustomerData))
                 return res.send("No data");
             else {
                 return res.send(CustomerData);
@@ -166,7 +164,7 @@ function CustomerManagement() {
             const CustomerLogo = req.files?.CustomerLogo;
             const Edit = await CommonQuery.viewData(CustomerId);
 
-            if (!Edit)
+            if (Utils.empty(Edit))
                 return res.send("No data");
             else {
                 let hashPassword = await bcrypt.hash(CustomerPassword, 10);
