@@ -27,14 +27,13 @@ function CustomerManagement() {
             const CustomerLogo = req.files?.CustomerLogo;
             const uuid = Utils.uuid();
 
-            if (await CommonQuery.checkEmail(CustomerEmail))
-                return res.send("Email Is Already Exists");
+            if (!CustomerLogo || CustomerLogo == "" || CustomerLogo == undefined) return res.send({ "errorMessage": "Please upload the Profile Image" })
 
-            if (await CommonQuery.checkMobile(CustomerMobile))
-                return res.send("Mobile is Already Exists");
+            if (await CommonQuery.checkEmail(CustomerEmail)) return res.send("Email Is Already Exists");
 
-            if (await CommonQuery.checkImage(CustomerLogo.md5))
-                return res.send("This profile picture is already used");
+            if (await CommonQuery.checkMobile(CustomerMobile)) return res.send("Mobile is Already Exists");
+
+            if (await CommonQuery.checkImage(CustomerLogo.md5)) return res.send("This profile picture is already used");
 
             let image = await cloudinary.uploader.upload(CustomerLogo.tempFilePath);
 
@@ -84,15 +83,22 @@ function CustomerManagement() {
     }
 
     this.otpVerify = async (req, res) => {
-        let otpVerify = req.body.otp;
-        if (!otpVerify)
-            res.send("Please enter the otp");
-        let otp = await CommonQuery.otpVerify(otpVerify);
-        if (!otp)
-            return res.send("Invalid Otp");
-        else {
-            await CommonQuery.updateStatus(otp.OtpVerification, "Yes");
-            return res.redirect("http://localhost:3000/IndianKart/CustomerLogin");
+        try {
+
+            let otpVerify = req.body.otp;
+            if (!otpVerify)
+                res.send("Please enter the otp");
+            let otp = await CommonQuery.otpVerify(otpVerify);
+
+            if (!otp)
+                return res.send("Invalid Otp");
+            else {
+                await CommonQuery.updateStatus(otp.OtpVerification, "Yes");
+                return res.redirect("http://localhost:3000/IndianKart/CustomerLogin");
+            }
+
+        } catch (e) {
+            return res.send({ "catchMessage": e.message });
         }
     }
 
@@ -139,29 +145,43 @@ function CustomerManagement() {
     }
 
     this.CustomerViewDetails = async (req, res) => {
-        const CustomerData = await CommonQuery.viewData(req.params.CustomerId);
-        if (!CustomerData)
-            return res.send("No data");
-        else {
-            return res.send(CustomerData);
+        try {
+            const CustomerData = await CommonQuery.viewData(req.params.CustomerId);
+            if (!CustomerData)
+                return res.send("No data");
+            else {
+                return res.send(CustomerData);
+            }
+
+        } catch (e) {
+            return res.send({ "catchMessage": e.message });
         }
     }
 
     this.CustomerEdit = async (req, res) => {
-        const { CustomerId, CustomerName, CustomerEmail, CustomerMobile, CustomerPassword } = req.body;
-        const CustomerLogo = req.files?.CustomerLogo;
-        const Edit = await CommonQuery.viewData(CustomerId);
-        if (!Edit)
-            return res.send("No data");
-        else {
-            let hashPassword = await bcrypt.hash(CustomerPassword, 10);
-            if (CustomerLogo) {
-                let image = await cloudinary.uploader.upload(CustomerLogo.tempFilePath);
-                const updateStatus = await CommonQuery.editId(CustomerId, CustomerName, CustomerEmail, CustomerMobile, hashPassword, image.secure_url);
-                return res.send("Updated Successfully");
+
+        try {
+
+            const { CustomerId, CustomerName, CustomerEmail, CustomerMobile, CustomerPassword } = req.body;
+            const CustomerLogo = req.files?.CustomerLogo;
+            const Edit = await CommonQuery.viewData(CustomerId);
+
+            if (!Edit)
+                return res.send("No data");
+            else {
+                let hashPassword = await bcrypt.hash(CustomerPassword, 10);
+
+                if (CustomerLogo) {
+                    let image = await cloudinary.uploader.upload(CustomerLogo.tempFilePath);
+                    const updateStatus = await CommonQuery.editId(CustomerId, CustomerName, CustomerEmail, CustomerMobile, hashPassword, image.secure_url);
+                    return res.send("Updated Successfully");
+                }
+                const updateStatus = await CommonQuery.editId(CustomerId, CustomerName, CustomerEmail, CustomerMobile, hashPassword);
+                return res.send(updateStatus);
             }
-            const updateStatus = await CommonQuery.editId(CustomerId, CustomerName, CustomerEmail, CustomerMobile, hashPassword);
-            return res.send(updateStatus);
+
+        } catch (e) {
+            return res.send({ "catchMessage": e.message });
         }
     }
 }

@@ -4,9 +4,9 @@ const bodyParser = require('body-parser');
 const Router = require('./Helpers/CommonRoutes');
 const path = require('path');
 var fileupload = require("express-fileupload");
-const device=require('express-device');
+const device = require('express-device');
 var useragent = require('express-useragent');
- 
+
 app.use(useragent.express());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -17,12 +17,11 @@ app.use(device.capture());
 app.set('views', path.join(__dirname, 'Frontend'));
 app.set('view engine', 'ejs');
 
-//app.use("/IndianKart", require("./Routers/CustomerRoutes/CustomerRouter"));
-
 app.use('/IndianKart', Router.CustomerRoutes);
 
 app.use('/IndianKart/Admin/', Router.AdminRoutes);
 
-app.listen(3000, (message) => {
-    console.log("Server Is Running");
+app.listen(3000, (res) => {
+    let message = ({ "Connection": "Database Connected!", "Port": "http://localhost:3000/" });
+    console.log(message);
 })
