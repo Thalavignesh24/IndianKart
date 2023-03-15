@@ -1,5 +1,5 @@
-const CustomerModel = require('./../Models/CustomerSchema/CustomerModel');
-const Utils = require('./Utils');
+const CustomerModel = require('../../Models/CustomerSchema/CustomerModel');
+const Utils = require('../Utils');
 function CommonQuery() {
 
     //Customer Register
