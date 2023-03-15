@@ -19,7 +19,9 @@ app.set('view engine', 'ejs');
 
 app.use('/IndianKart', Router.CustomerRoutes);
 
-app.use('/IndianKart/Admin/', Router.AdminRoutes);
+app.use('/IndianKart/Admin', Router.AdminRoutes);
+
+app.use('/IndianKart/Admin/Auth', Router.ProductRoutes);
 
 app.listen(3000, (res) => {
     let message = ({ "Connection": "Database Connected!", "Port": "http://localhost:3000/" });

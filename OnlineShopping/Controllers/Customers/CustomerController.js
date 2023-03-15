@@ -1,4 +1,4 @@
-const CommonQuery = require('../../Helpers/CommonService');
+const CommonQuery = require('../../Helpers/Services/CommonService');
 const CustomerModel = require('../../Models/CustomerSchema/CustomerModel');
 const Utils = require('../../Helpers/Utils');
 const bcrypt = require('bcrypt');
