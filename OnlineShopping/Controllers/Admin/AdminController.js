@@ -1,9 +1,11 @@
 const CustomerModel = require('../../Models/CustomerSchema/CustomerModel');
 const TemplateModel = require('../../Models/TemplateSchema/TemplateModel');
 const excel = require('exceljs');
+const Utlis = require('../../Helpers/Utils');
 
 
 function AdminManagement() {
+
     this.CustomerExcel = async (req, res) => {
         try {
             const workbook = new excel.Workbook();
@@ -34,15 +36,6 @@ function AdminManagement() {
                         path: `${path}/users.xlsx`,
                     });
                 });
-
-            // res.setHeader("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
-
-            // res.setHeader("Content-Disposition", `attachment;filename=CustomerDetails.xlsx`);
-
-            // return workbook.xlsx.write(res)
-            //     .then(function () {
-            //         res.end()
-            //     });
         } catch (exception) {
             console.log(exception.message);
         }
@@ -65,6 +58,7 @@ function AdminManagement() {
             console.log(error.message);
         }
     }
+
 }
 
 module.exports = new AdminManagement();

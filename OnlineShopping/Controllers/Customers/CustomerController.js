@@ -1,4 +1,4 @@
-const CommonQuery = require('../../Helpers/CommonService');
+const CommonQuery = require('../../Helpers/Services/CommonService');
 const CustomerModel = require('../../Models/CustomerSchema/CustomerModel');
 const Utils = require('../../Helpers/Utils');
 const bcrypt = require('bcrypt');
@@ -27,14 +27,13 @@ function CustomerManagement() {
             const CustomerLogo = req.files?.CustomerLogo;
             const uuid = Utils.uuid();
 
-            if (await CommonQuery.checkEmail(CustomerEmail))
-                return res.send("Email Is Already Exists");
+            if (Utils.empty(CustomerLogo)) return res.send({ "errorMessage": "Please upload the Profile Image" })
 
-            if (await CommonQuery.checkMobile(CustomerMobile))
-                return res.send("Mobile is Already Exists");
+            if (await CommonQuery.checkEmail(CustomerEmail)) return res.send("Email Is Already Exists");
 
-            if (await CommonQuery.checkImage(CustomerLogo.md5))
-                return res.send("This profile picture is already used");
+            if (await CommonQuery.checkMobile(CustomerMobile)) return res.send("Mobile is Already Exists");
+
+            if (await CommonQuery.checkImage(CustomerLogo.md5)) return res.send("This profile picture is already used");
 
             let image = await cloudinary.uploader.upload(CustomerLogo.tempFilePath);
 
@@ -78,21 +77,26 @@ function CustomerManagement() {
                     return res.send("Failed To Register");
                 return res.render("CustomerInterface/EmailOtpVerification");
             }
-        } catch (error) {
-            console.log(error.message);
+        } catch (e) {
+            return res.send({ "catchMessage": e.message });
         }
     }
 
     this.otpVerify = async (req, res) => {
-        let otpVerify = req.body.otp;
-        if (!otpVerify)
-            res.send("Please enter the otp");
-        let otp = await CommonQuery.otpVerify(otpVerify);
-        if (!otp)
-            return res.send("Invalid Otp");
-        else {
-            await CommonQuery.updateStatus(otp.OtpVerification, "Yes");
-            return res.redirect("http://localhost:3000/IndianKart/CustomerLogin");
+        try {
+
+            let otpVerify = req.body.otp;
+            if (Utils.empty(otpVerify)) return res.send("Please enter the otp");
+            let otp = await CommonQuery.otpVerify(otpVerify);
+
+            if (Utils.empty(otp)) return res.send("Invalid Otp");
+            else {
+                await CommonQuery.updateStatus(otp.OtpVerification, "Yes");
+                return res.redirect("http://localhost:3000/IndianKart/CustomerLogin");
+            }
+
+        } catch (e) {
+            return res.send({ "catchMessage": e.message });
         }
     }
 
@@ -107,13 +111,13 @@ function CustomerManagement() {
                 let password = await CommonQuery.getPassword(CustomerEmail);
                 let checkPassword = await bcrypt.compare(CustomerPassword, password.CustomerPassword);
 
-                if (!checkPassword)
+                if (Utils.empty(checkPassword))
                     return res.send("Incorrect Password");
                 else {
                     let Verify = await CommonQuery.checkStatus(CustomerEmail, "Yes");
                     if (Verify) {
                         const userToken = await jwt.sign({ CustomerEmail: CustomerEmail }, "SecretKey", { expiresIn: "2h" });
-                        this.userToken=userToken;
+                        this.userToken = userToken;
                         console.log(this.userToken);
                         return res.send
                             ({
@@ -133,37 +137,49 @@ function CustomerManagement() {
                     }
                 }
             }
-        } catch (error) {
-            console.log(error.message);
+        } catch (e) {
+            return res.send({ "catchMessage": e.message });
         }
     }
 
     this.CustomerViewDetails = async (req, res) => {
-        const token=this.userToken;
-        console.log(token);
-        const CustomerData = await CommonQuery.viewData(req.params.CustomerId);
-        if (!CustomerData)
-            return res.send("No data");
-        else {
-            return res.send(CustomerData);
+        try {
+            const CustomerData = await CommonQuery.viewData(req.params.CustomerId);
+            if (Utils.empty(CustomerData))
+                return res.send("No data");
+            else {
+                return res.send(CustomerData);
+            }
+
+        } catch (e) {
+            return res.send({ "catchMessage": e.message });
         }
     }
 
     this.CustomerEdit = async (req, res) => {
-        const { CustomerId, CustomerName, CustomerEmail, CustomerMobile, CustomerPassword } = req.body;
-        const CustomerLogo = req.files?.CustomerLogo;
-        const Edit = await CommonQuery.viewData(CustomerId);
-        if (!Edit)
-            return res.send("No data");
-        else {
-            let hashPassword = await bcrypt.hash(CustomerPassword, 10);
-            if (CustomerLogo) {
-                let image = await cloudinary.uploader.upload(CustomerLogo.tempFilePath);
-                const updateStatus = await CommonQuery.editId(CustomerId, CustomerName, CustomerEmail, CustomerMobile, hashPassword, image.secure_url);
-                return res.send("Updated Successfully");
+
+        try {
+
+            const { CustomerId, CustomerName, CustomerEmail, CustomerMobile, CustomerPassword } = req.body;
+            const CustomerLogo = req.files?.CustomerLogo;
+            const Edit = await CommonQuery.viewData(CustomerId);
+
+            if (Utils.empty(Edit))
+                return res.send("No data");
+            else {
+                let hashPassword = await bcrypt.hash(CustomerPassword, 10);
+
+                if (CustomerLogo) {
+                    let image = await cloudinary.uploader.upload(CustomerLogo.tempFilePath);
+                    const updateStatus = await CommonQuery.editId(CustomerId, CustomerName, CustomerEmail, CustomerMobile, hashPassword, image.secure_url);
+                    return res.send("Updated Successfully");
+                }
+                const updateStatus = await CommonQuery.editId(CustomerId, CustomerName, CustomerEmail, CustomerMobile, hashPassword);
+                return res.send(updateStatus);
             }
-            const updateStatus = await CommonQuery.editId(CustomerId, CustomerName, CustomerEmail, CustomerMobile, hashPassword);
-            return res.send(updateStatus);
+
+        } catch (e) {
+            return res.send({ "catchMessage": e.message });
         }
     }
 }

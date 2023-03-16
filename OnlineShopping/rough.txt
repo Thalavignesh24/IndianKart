@@ -1,0 +1,9 @@
+ try {
+
+} catch (e) {
+    return res.send({ "catchMessage": e.message });
+}
+
+ProductModel.findOne({ ProductName: { $regex: ProductName, '$options': 'i' }, ProductId: { $ne: ProductId } });
+
+ProductModel.findOne({ LogoId: ProductImage, ProductId: { $ne: ProductId } });

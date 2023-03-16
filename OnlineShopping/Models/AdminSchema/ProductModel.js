@@ -4,29 +4,29 @@ let dbconnect = mongoose.connect("mongodb://localhost:27017/IndianKart");
 if (!dbconnect) {
     console.log("Database Connection Failed");
 }
-const users = mongoose.Schema({
-    CustomerId:
+const products = mongoose.Schema({
+    ProductId:
     {
         type: String,
         unique: true
     },
-    CustomerName:
+    ProductName:
     {
         type: String,
         uppercase: true,
         required: true
     },
-    CustomerEmail:
+    ProductQuantity:
     {
         type: String,
         required: true
     },
-    CustomerMobile:
+    ProductAmount:
     {
         type: String,
         required: true
     },
-    CustomerPassword:
+    ProductDescription:
     {
         type: String,
         required: true
@@ -35,33 +35,19 @@ const users = mongoose.Schema({
     {
         type: String
     },
-    CustomerLogo:
+    ProductImage:
     {
         type: String
     },
-    OtpVerification:
+    status:
     {
         type: String,
+        enum: ['active', 'inactive'],
         required: true
-    },
-    VerifiedStatus:
-    {
-        type: String
-    },
-    DeviceDetails:
-    {
-        type: Object,
-        required: true
-    },
-    GadgetsDetails: [
-        {
-            type: Object
-        }
-    ]
-
+    }
 }, {
     timestamps: true
 });
 
-let dbs = mongoose.model('customers', users);
+let dbs = mongoose.model('products', products);
 module.exports = dbs;

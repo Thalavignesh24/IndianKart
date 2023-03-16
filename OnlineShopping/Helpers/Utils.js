@@ -34,6 +34,12 @@ function Utils() {
     this.otp = () => {
         return otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false, lowerCaseAlphabets: false });
     }
+
+    this.empty = (data) => {
+        if (!data || data == "" || data == undefined || data == null || data == [] || data.length == 0 || JSON.stringify(data) == '{}') {
+            return true;
+        }
+    }
 }
 
 module.exports = new Utils();
