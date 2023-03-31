@@ -24,7 +24,7 @@ const handlebarsOptions = ({
 
 transporter.use('compile', hbs(handlebarsOptions));
 
-module.exports.sendMailer = async (res, emailData, type) => {
+module.exports.sendMailer = async (emailData, type) => {
     let template = await TemplateModel.findOne({ "EmailType": type });
     if (template) {
         var mailOptions = {
