@@ -1,0 +1,6362 @@
+[{
+  "_id": {
+    "$oid": "642e787ee31e405c31245234"
+  },
+  "countryId": 1,
+  "countryName": "Afghanistan",
+  "twoDigtCode": "AF",
+  "threeDigtCode": "AFG",
+  "isoNumeric": 4,
+  "status": "active",
+  "timezones": "Asia/Kabul",
+  "dialCode": "+93",
+  "currency": {
+    "code": "AFN",
+    "symbol": "؋",
+    "name": "Afghani"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245235"
+  },
+  "countryId": 2,
+  "countryName": "Albania",
+  "twoDigtCode": "AL",
+  "threeDigtCode": "ALB",
+  "isoNumeric": 8,
+  "status": "active",
+  "timezones": "Europe/Tirane",
+  "dialCode": "+355",
+  "currency": {
+    "code": "ALL",
+    "symbol": "Lek",
+    "name": "Lek"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245236"
+  },
+  "countryId": 3,
+  "countryName": "Algeria",
+  "twoDigtCode": "DZ",
+  "threeDigtCode": "DZA",
+  "isoNumeric": 12,
+  "status": "active",
+  "timezones": "Africa/Algiers",
+  "dialCode": "+213",
+  "currency": {
+    "code": "DZD",
+    "symbol": false,
+    "name": "Dinar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245237"
+  },
+  "countryId": 4,
+  "countryName": "American Samoa",
+  "twoDigtCode": "AS",
+  "threeDigtCode": "ASM",
+  "isoNumeric": 16,
+  "status": "active",
+  "timezones": "Pacific/Pago_Pago",
+  "dialCode": "+1684",
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245238"
+  },
+  "countryId": 5,
+  "countryName": "Andorra",
+  "twoDigtCode": "AD",
+  "threeDigtCode": "AND",
+  "isoNumeric": 20,
+  "status": "active",
+  "timezones": "Europe/Andorra",
+  "dialCode": "+376",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245239"
+  },
+  "countryId": 6,
+  "countryName": "Angola",
+  "twoDigtCode": "AO",
+  "threeDigtCode": "AGO",
+  "isoNumeric": 24,
+  "status": "active",
+  "timezones": "Africa/Luanda",
+  "dialCode": "+244",
+  "currency": {
+    "code": "AOA",
+    "symbol": "Kz",
+    "name": "Kwanza"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124523a"
+  },
+  "countryId": 7,
+  "countryName": "Anguilla",
+  "twoDigtCode": "AI",
+  "threeDigtCode": "AIA",
+  "isoNumeric": 660,
+  "status": "active",
+  "timezones": "America/Anguilla",
+  "dialCode": "+1264",
+  "currency": {
+    "code": "XCD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124523b"
+  },
+  "countryId": 8,
+  "countryName": "Antarctica",
+  "twoDigtCode": "AQ",
+  "threeDigtCode": "ATA",
+  "isoNumeric": 10,
+  "dialCode": "+672",
+  "currency": {
+    "code": "",
+    "symbol": false,
+    "name": ""
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124523c"
+  },
+  "countryId": 9,
+  "countryName": "Antigua and Barbuda",
+  "twoDigtCode": "AG",
+  "threeDigtCode": "ATG",
+  "isoNumeric": 28,
+  "status": "active",
+  "timezones": "America/Antigua",
+  "dialCode": "+1268",
+  "currency": {
+    "code": "XCD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124523d"
+  },
+  "countryId": 10,
+  "countryName": "Argentina",
+  "twoDigtCode": "AR",
+  "threeDigtCode": "ARG",
+  "isoNumeric": 32,
+  "dialCode": "+54",
+  "status": "active",
+  "timezones": "America/Argentina/Buenos_Aires",
+  "currency": {
+    "code": "ARS",
+    "symbol": "$",
+    "name": "Peso"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124523e"
+  },
+  "countryId": 11,
+  "countryName": "Armenia",
+  "twoDigtCode": "AM",
+  "threeDigtCode": "ARM",
+  "isoNumeric": 51,
+  "status": "active",
+  "timezones": "Asia/Yerevan",
+  "dialCode": "+374",
+  "currency": {
+    "code": "AMD",
+    "symbol": false,
+    "name": "Dram"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124523f"
+  },
+  "countryId": 12,
+  "countryName": "Aruba",
+  "twoDigtCode": "AW",
+  "threeDigtCode": "ABW",
+  "isoNumeric": 533,
+  "status": "active",
+  "timezones": "America/Aruba",
+  "dialCode": "+297",
+  "currency": {
+    "code": "AWG",
+    "symbol": "ƒ",
+    "name": "Guilder"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245240"
+  },
+  "countryId": 13,
+  "countryName": "Australia",
+  "twoDigtCode": "AU",
+  "threeDigtCode": "AUS",
+  "isoNumeric": 36,
+  "status": "active",
+  "timezones": "Australia/Sydney",
+  "dialCode": "+61",
+  "currency": {
+    "code": "AUD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245241"
+  },
+  "countryId": 14,
+  "countryName": "Austria",
+  "twoDigtCode": "AT",
+  "threeDigtCode": "AUT",
+  "isoNumeric": 40,
+  "status": "active",
+  "timezones": "Europe/Vienna",
+  "dialCode": "+43",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245242"
+  },
+  "countryId": 15,
+  "countryName": "Azerbaijan",
+  "twoDigtCode": "AZ",
+  "threeDigtCode": "AZE",
+  "isoNumeric": 31,
+  "status": "active",
+  "timezones": "Asia/Baku",
+  "dialCode": "+994",
+  "currency": {
+    "code": "AZN",
+    "symbol": "ман",
+    "name": "Manat"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245243"
+  },
+  "countryId": 16,
+  "countryName": "Bahamas",
+  "twoDigtCode": "BS",
+  "threeDigtCode": "BHS",
+  "isoNumeric": 44,
+  "status": "active",
+  "timezones": "America/Nassau",
+  "dialCode": "+1242",
+  "currency": {
+    "code": "BSD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245244"
+  },
+  "countryId": 17,
+  "countryName": "Bahrain",
+  "twoDigtCode": "BH",
+  "threeDigtCode": "BHR",
+  "isoNumeric": 48,
+  "status": "active",
+  "timezones": "Asia/Bahrain",
+  "dialCode": "+973",
+  "currency": {
+    "code": "BHD",
+    "symbol": false,
+    "name": "Dinar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245245"
+  },
+  "countryId": 18,
+  "countryName": "Bangladesh",
+  "twoDigtCode": "BD",
+  "threeDigtCode": "BGD",
+  "isoNumeric": 50,
+  "status": "active",
+  "timezones": "Asia/Dhaka",
+  "dialCode": "+880",
+  "currency": {
+    "code": "BDT",
+    "symbol": false,
+    "name": "Taka"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245246"
+  },
+  "countryId": 19,
+  "countryName": "Barbados",
+  "twoDigtCode": "BB",
+  "threeDigtCode": "BRB",
+  "isoNumeric": 52,
+  "status": "active",
+  "timezones": "America/Barbados",
+  "dialCode": "+1246",
+  "currency": {
+    "code": "BBD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245247"
+  },
+  "countryId": 20,
+  "countryName": "Belarus",
+  "twoDigtCode": "BY",
+  "threeDigtCode": "BLR",
+  "isoNumeric": 112,
+  "status": "active",
+  "timezones": "Europe/Minsk",
+  "dialCode": "+375",
+  "currency": {
+    "code": "BYR",
+    "symbol": "p.",
+    "name": "Ruble"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245248"
+  },
+  "countryId": 21,
+  "countryName": "Belgium",
+  "twoDigtCode": "BE",
+  "threeDigtCode": "BEL",
+  "isoNumeric": 56,
+  "status": "active",
+  "timezones": "Europe/Brussels",
+  "dialCode": "+32",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245249"
+  },
+  "countryId": 22,
+  "countryName": "Belize",
+  "twoDigtCode": "BZ",
+  "threeDigtCode": "BLZ",
+  "isoNumeric": 84,
+  "status": "active",
+  "timezones": "America/Belize",
+  "dialCode": "+501",
+  "currency": {
+    "code": "BZD",
+    "symbol": "BZ$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124524a"
+  },
+  "countryId": 23,
+  "countryName": "Benin",
+  "twoDigtCode": "BJ",
+  "threeDigtCode": "BEN",
+  "isoNumeric": 204,
+  "status": "active",
+  "timezones": "Africa/Porto-Novo",
+  "dialCode": "+229",
+  "currency": {
+    "code": "XOF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124524b"
+  },
+  "countryId": 24,
+  "countryName": "Bermuda",
+  "twoDigtCode": "BM",
+  "threeDigtCode": "BMU",
+  "isoNumeric": 60,
+  "status": "active",
+  "timezones": "Atlantic/Bermuda",
+  "dialCode": "+1441",
+  "currency": {
+    "code": "BMD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124524c"
+  },
+  "countryId": 25,
+  "countryName": "Bhutan",
+  "twoDigtCode": "BT",
+  "threeDigtCode": "BTN",
+  "isoNumeric": 64,
+  "status": "active",
+  "timezones": "Asia/Thimphu",
+  "dialCode": "+975",
+  "currency": {
+    "code": "BTN",
+    "symbol": false,
+    "name": "Ngultrum"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124524d"
+  },
+  "countryId": 26,
+  "countryName": "Bolivia",
+  "twoDigtCode": "BO",
+  "threeDigtCode": "BOL",
+  "isoNumeric": 68,
+  "status": "active",
+  "timezones": "America/La_Paz",
+  "dialCode": "+591",
+  "currency": {
+    "code": "BOB",
+    "symbol": "$b",
+    "name": "Boliviano"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124524e"
+  },
+  "countryId": 27,
+  "countryName": "Bosnia and Herzegovina",
+  "twoDigtCode": "BA",
+  "threeDigtCode": "BIH",
+  "isoNumeric": 70,
+  "status": "active",
+  "timezones": "Europe/Sarajevo",
+  "dialCode": "+387",
+  "currency": {
+    "code": "BAM",
+    "symbol": "KM",
+    "name": "Marka"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124524f"
+  },
+  "countryId": 28,
+  "countryName": "Botswana",
+  "twoDigtCode": "BW",
+  "threeDigtCode": "BWA",
+  "isoNumeric": 72,
+  "status": "active",
+  "timezones": "Africa/Gaborone",
+  "dialCode": "+267",
+  "currency": {
+    "code": "BWP",
+    "symbol": "P",
+    "name": "Pula"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245250"
+  },
+  "countryId": 29,
+  "countryName": "Bouvet Island",
+  "twoDigtCode": "BV",
+  "threeDigtCode": "BVT",
+  "isoNumeric": 74,
+  "status": "active",
+  "timezones": "Europe/Oslo",
+  "dialCode": null,
+  "currency": {
+    "code": "NOK",
+    "symbol": "kr",
+    "name": "Krone"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245251"
+  },
+  "countryId": 30,
+  "countryName": "Brazil",
+  "twoDigtCode": "BR",
+  "threeDigtCode": "BRA",
+  "isoNumeric": 76,
+  "status": "active",
+  "timezones": "America/Fortaleza",
+  "dialCode": "+55",
+  "currency": {
+    "code": "BRL",
+    "symbol": "R$",
+    "name": "Real"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245252"
+  },
+  "countryId": 31,
+  "countryName": "British Indian Ocean Territory",
+  "twoDigtCode": "IO",
+  "threeDigtCode": "IOT",
+  "isoNumeric": 86,
+  "status": "active",
+  "timezones": "Indian/Chagos",
+  "dialCode": "+246",
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245253"
+  },
+  "countryId": 32,
+  "countryName": "British Virgin Islands",
+  "twoDigtCode": "VG",
+  "threeDigtCode": "VGB",
+  "isoNumeric": 92,
+  "status": "active",
+  "timezones": "America/Tortola",
+  "dialCode": null,
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245254"
+  },
+  "countryId": 33,
+  "countryName": "Brunei",
+  "twoDigtCode": "BN",
+  "threeDigtCode": "BRN",
+  "isoNumeric": 96,
+  "status": "active",
+  "timezones": "Asia/Brunei",
+  "dialCode": "+673",
+  "currency": {
+    "code": "BND",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245255"
+  },
+  "countryId": 34,
+  "countryName": "Bulgaria",
+  "twoDigtCode": "BG",
+  "threeDigtCode": "BGR",
+  "isoNumeric": 100,
+  "status": "active",
+  "timezones": "Europe/Sofia",
+  "dialCode": "+359",
+  "currency": {
+    "code": "BGN",
+    "symbol": "лв",
+    "name": "Lev"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245256"
+  },
+  "countryId": 35,
+  "countryName": "Burkina Faso",
+  "twoDigtCode": "BF",
+  "threeDigtCode": "BFA",
+  "isoNumeric": 854,
+  "status": "active",
+  "timezones": "Africa/Ouagadougou",
+  "dialCode": "+226",
+  "currency": {
+    "code": "XOF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245257"
+  },
+  "countryId": 36,
+  "countryName": "Burundi",
+  "twoDigtCode": "BI",
+  "threeDigtCode": "BDI",
+  "isoNumeric": 108,
+  "status": "active",
+  "timezones": "Africa/Bujumbura",
+  "dialCode": "+257",
+  "currency": {
+    "code": "BIF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245258"
+  },
+  "countryId": 37,
+  "countryName": "Cambodia",
+  "twoDigtCode": "KH",
+  "threeDigtCode": "KHM",
+  "isoNumeric": 116,
+  "status": "active",
+  "timezones": "Asia/Phnom_Penh",
+  "dialCode": "+855",
+  "currency": {
+    "code": "KHR",
+    "symbol": "៛",
+    "name": "Riels"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245259"
+  },
+  "countryId": 38,
+  "countryName": "Cameroon",
+  "twoDigtCode": "CM",
+  "threeDigtCode": "CMR",
+  "isoNumeric": 120,
+  "status": "active",
+  "timezones": "Africa/Douala",
+  "dialCode": "+237",
+  "currency": {
+    "code": "XAF",
+    "symbol": "FCF",
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124525a"
+  },
+  "countryId": 39,
+  "countryName": "Canada",
+  "twoDigtCode": "CA",
+  "threeDigtCode": "CAN",
+  "isoNumeric": 124,
+  "dialCode": "+1",
+  "currency": {
+    "code": "CAD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124525b"
+  },
+  "countryId": 40,
+  "countryName": "Cape Verde",
+  "twoDigtCode": "CV",
+  "threeDigtCode": "CPV",
+  "isoNumeric": 132,
+  "status": "active",
+  "timezones": "Atlantic/Cape_Verde",
+  "dialCode": "+238",
+  "currency": {
+    "code": "CVE",
+    "symbol": false,
+    "name": "Escudo"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124525c"
+  },
+  "countryId": 41,
+  "countryName": "Cayman Islands",
+  "twoDigtCode": "KY",
+  "threeDigtCode": "CYM",
+  "isoNumeric": 136,
+  "status": "active",
+  "timezones": "America/Cayman",
+  "dialCode": "+ 345",
+  "currency": {
+    "code": "KYD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124525d"
+  },
+  "countryId": 42,
+  "countryName": "Central African Republic",
+  "twoDigtCode": "CF",
+  "threeDigtCode": "CAF",
+  "isoNumeric": 140,
+  "status": "active",
+  "timezones": "Africa/Bangui",
+  "dialCode": "+236",
+  "currency": {
+    "code": "XAF",
+    "symbol": "FCF",
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124525e"
+  },
+  "countryId": 43,
+  "countryName": "Chad",
+  "twoDigtCode": "TD",
+  "threeDigtCode": "TCD",
+  "isoNumeric": 148,
+  "status": "active",
+  "timezones": "Africa/Ndjamena",
+  "dialCode": "+235",
+  "currency": {
+    "code": "XAF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124525f"
+  },
+  "countryId": 44,
+  "countryName": "Chile",
+  "twoDigtCode": "CL",
+  "threeDigtCode": "CHL",
+  "isoNumeric": 152,
+  "status": "active",
+  "timezones": "America/Santiago",
+  "dialCode": "+56",
+  "currency": {
+    "code": "CLP",
+    "symbol": false,
+    "name": "Peso"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245260"
+  },
+  "countryId": 45,
+  "countryName": "China",
+  "twoDigtCode": "CN",
+  "threeDigtCode": "CHN",
+  "isoNumeric": 156,
+  "status": "active",
+  "timezones": "Asia/Shanghai",
+  "dialCode": "+86",
+  "currency": {
+    "code": "CNY",
+    "symbol": "¥",
+    "name": "YuanRenminbi"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245261"
+  },
+  "countryId": 46,
+  "countryName": "Christmas Island",
+  "twoDigtCode": "CX",
+  "threeDigtCode": "CXR",
+  "isoNumeric": 162,
+  "status": "active",
+  "timezones": "Indian/Christmas",
+  "dialCode": "+61",
+  "currency": {
+    "code": "AUD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245262"
+  },
+  "countryId": 48,
+  "countryName": "Colombia",
+  "twoDigtCode": "CO",
+  "threeDigtCode": "COL",
+  "isoNumeric": 170,
+  "status": "active",
+  "timezones": "America/Bogota",
+  "dialCode": "+57",
+  "currency": {
+    "code": "COP",
+    "symbol": "$",
+    "name": "Peso"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245263"
+  },
+  "countryId": 49,
+  "countryName": "Comoros",
+  "twoDigtCode": "KM",
+  "threeDigtCode": "COM",
+  "isoNumeric": 174,
+  "status": "active",
+  "timezones": "Indian/Comoro",
+  "dialCode": "+269",
+  "currency": {
+    "code": "KMF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245264"
+  },
+  "countryId": 50,
+  "countryName": "Cook Islands",
+  "twoDigtCode": "CK",
+  "threeDigtCode": "COK",
+  "isoNumeric": 184,
+  "status": "active",
+  "timezones": "Pacific/Rarotonga",
+  "dialCode": "+682",
+  "currency": {
+    "code": "NZD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245265"
+  },
+  "countryId": 51,
+  "countryName": "Costa Rica",
+  "twoDigtCode": "CR",
+  "threeDigtCode": "CRI",
+  "isoNumeric": 188,
+  "status": "active",
+  "timezones": "America/Costa_Rica",
+  "dialCode": "+506",
+  "currency": {
+    "code": "CRC",
+    "symbol": "₡",
+    "name": "Colon"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245266"
+  },
+  "countryId": 52,
+  "countryName": "Croatia",
+  "twoDigtCode": "HR",
+  "threeDigtCode": "HRV",
+  "isoNumeric": 191,
+  "status": "active",
+  "timezones": "Europe/Zagreb",
+  "dialCode": "+385",
+  "currency": {
+    "code": "HRK",
+    "symbol": "kn",
+    "name": "Kuna"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245267"
+  },
+  "countryId": 53,
+  "countryName": "Cuba",
+  "twoDigtCode": "CU",
+  "threeDigtCode": "CUB",
+  "isoNumeric": 192,
+  "status": "active",
+  "timezones": "America/Havana",
+  "dialCode": "+53",
+  "currency": {
+    "code": "CUP",
+    "symbol": "₱",
+    "name": "Peso"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245268"
+  },
+  "countryId": 54,
+  "countryName": "Cyprus",
+  "twoDigtCode": "CY",
+  "threeDigtCode": "CYP",
+  "isoNumeric": 196,
+  "status": "active",
+  "timezones": "Asia/Nicosia",
+  "dialCode": "+357",
+  "currency": {
+    "code": "CYP",
+    "symbol": false,
+    "name": "Pound"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245269"
+  },
+  "countryId": 55,
+  "countryName": "Czech Republic",
+  "twoDigtCode": "CZ",
+  "threeDigtCode": "CZE",
+  "isoNumeric": 203,
+  "status": "active",
+  "timezones": "Europe/Prague",
+  "dialCode": "+420",
+  "currency": {
+    "code": "CZK",
+    "symbol": "Kč",
+    "name": "Koruna"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124526a"
+  },
+  "countryId": 56,
+  "countryName": "Democratic Republic of the Congo",
+  "twoDigtCode": "CD",
+  "threeDigtCode": "COD",
+  "isoNumeric": 180,
+  "status": "active",
+  "timezones": "Africa/Brazzaville",
+  "dialCode": "+243",
+  "currency": {
+    "code": "CDF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124526b"
+  },
+  "countryId": 57,
+  "countryName": "Denmark",
+  "twoDigtCode": "DK",
+  "threeDigtCode": "DNK",
+  "isoNumeric": 208,
+  "status": "active",
+  "timezones": "Europe/Copenhagen",
+  "dialCode": "+45",
+  "currency": {
+    "code": "DKK",
+    "symbol": "kr",
+    "name": "Krone"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124526c"
+  },
+  "countryId": 58,
+  "countryName": "Djibouti",
+  "twoDigtCode": "DJ",
+  "threeDigtCode": "DJI",
+  "isoNumeric": 262,
+  "status": "active",
+  "timezones": "Africa/Djibouti",
+  "dialCode": "+253",
+  "currency": {
+    "code": "DJF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124526d"
+  },
+  "countryId": 59,
+  "countryName": "Dominica",
+  "twoDigtCode": "DM",
+  "threeDigtCode": "DMA",
+  "isoNumeric": 212,
+  "status": "active",
+  "timezones": "America/Dominica",
+  "dialCode": "+1767",
+  "currency": {
+    "code": "XCD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124526e"
+  },
+  "countryId": 60,
+  "countryName": "Dominican Republic",
+  "twoDigtCode": "DO",
+  "threeDigtCode": "DOM",
+  "isoNumeric": 214,
+  "status": "active",
+  "timezones": "America/Santo_Domingo",
+  "dialCode": "+1849",
+  "currency": {
+    "code": "DOP",
+    "symbol": "RD$",
+    "name": "Peso"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124526f"
+  },
+  "countryId": 62,
+  "countryName": "Ecuador",
+  "twoDigtCode": "EC",
+  "threeDigtCode": "ECU",
+  "isoNumeric": 218,
+  "status": "active",
+  "timezones": "Pacific/Galapagos",
+  "dialCode": "+593",
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245270"
+  },
+  "countryId": 63,
+  "countryName": "Egypt",
+  "twoDigtCode": "EG",
+  "threeDigtCode": "EGY",
+  "isoNumeric": 818,
+  "status": "active",
+  "timezones": "Africa/Cairo",
+  "dialCode": "+20",
+  "currency": {
+    "code": "EGP",
+    "symbol": "£",
+    "name": "Pound"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245271"
+  },
+  "countryId": 64,
+  "countryName": "El Salvador",
+  "twoDigtCode": "SV",
+  "threeDigtCode": "SLV",
+  "isoNumeric": 222,
+  "status": "active",
+  "timezones": "America/El_Salvador",
+  "dialCode": "+503",
+  "currency": {
+    "code": "SVC",
+    "symbol": "$",
+    "name": "Colone"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245272"
+  },
+  "countryId": 65,
+  "countryName": "Equatorial Guinea",
+  "twoDigtCode": "GQ",
+  "threeDigtCode": "GNQ",
+  "isoNumeric": 226,
+  "status": "active",
+  "timezones": "Africa/Malabo",
+  "dialCode": "+240",
+  "currency": {
+    "code": "XAF",
+    "symbol": "FCF",
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245273"
+  },
+  "countryId": 66,
+  "countryName": "Eritrea",
+  "twoDigtCode": "ER",
+  "threeDigtCode": "ERI",
+  "isoNumeric": 232,
+  "status": "active",
+  "timezones": "Africa/Asmara",
+  "dialCode": "+291",
+  "currency": {
+    "code": "ERN",
+    "symbol": "Nfk",
+    "name": "Nakfa"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245274"
+  },
+  "countryId": 67,
+  "countryName": "Estonia",
+  "twoDigtCode": "EE",
+  "threeDigtCode": "EST",
+  "isoNumeric": 233,
+  "status": "active",
+  "timezones": "Europe/Tallinn",
+  "dialCode": "+372",
+  "currency": {
+    "code": "EEK",
+    "symbol": "kr",
+    "name": "Kroon"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245275"
+  },
+  "countryId": 68,
+  "countryName": "Ethiopia",
+  "twoDigtCode": "ET",
+  "threeDigtCode": "ETH",
+  "isoNumeric": 231,
+  "status": "active",
+  "timezones": "Africa/Addis_Ababa",
+  "dialCode": "+251",
+  "currency": {
+    "code": "ETB",
+    "symbol": false,
+    "name": "Birr"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245276"
+  },
+  "countryId": 69,
+  "countryName": "Falkland Islands",
+  "twoDigtCode": "FK",
+  "threeDigtCode": "FLK",
+  "isoNumeric": 238,
+  "status": "active",
+  "timezones": "Atlantic/Stanley",
+  "dialCode": "+500",
+  "currency": {
+    "code": "FKP",
+    "symbol": "£",
+    "name": "Pound"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245277"
+  },
+  "countryId": 70,
+  "countryName": "Faroe Islands",
+  "twoDigtCode": "FO",
+  "threeDigtCode": "FRO",
+  "isoNumeric": 234,
+  "status": "active",
+  "timezones": "Atlantic/Faroe",
+  "dialCode": "+298",
+  "currency": {
+    "code": "DKK",
+    "symbol": "kr",
+    "name": "Krone"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245278"
+  },
+  "countryId": 71,
+  "countryName": "Fiji",
+  "twoDigtCode": "FJ",
+  "threeDigtCode": "FJI",
+  "isoNumeric": 242,
+  "status": "active",
+  "timezones": "Pacific/Fiji",
+  "dialCode": "+679",
+  "currency": {
+    "code": "FJD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245279"
+  },
+  "countryId": 72,
+  "countryName": "Finland",
+  "twoDigtCode": "FI",
+  "threeDigtCode": "FIN",
+  "isoNumeric": 246,
+  "status": "active",
+  "timezones": "Europe/Helsinki",
+  "dialCode": "+358",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124527a"
+  },
+  "countryId": 73,
+  "countryName": "France",
+  "twoDigtCode": "FR",
+  "threeDigtCode": "FRA",
+  "isoNumeric": 250,
+  "status": "active",
+  "timezones": "Europe/Paris",
+  "dialCode": "+33",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124527b"
+  },
+  "countryId": 74,
+  "countryName": "French Guiana",
+  "twoDigtCode": "GF",
+  "threeDigtCode": "GUF",
+  "isoNumeric": 254,
+  "status": "active",
+  "timezones": "America/Cayenne",
+  "dialCode": "+594",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124527c"
+  },
+  "countryId": 75,
+  "countryName": "French Polynesia",
+  "twoDigtCode": "PF",
+  "threeDigtCode": "PYF",
+  "isoNumeric": 258,
+  "status": "active",
+  "timezones": "Pacific/Tahiti",
+  "dialCode": "+689",
+  "currency": {
+    "code": "XPF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124527d"
+  },
+  "countryId": 76,
+  "countryName": "French Southern Territories",
+  "twoDigtCode": "TF",
+  "threeDigtCode": "ATF",
+  "isoNumeric": 260,
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124527e"
+  },
+  "countryId": 77,
+  "countryName": "Gabon",
+  "twoDigtCode": "GA",
+  "threeDigtCode": "GAB",
+  "isoNumeric": 266,
+  "status": "active",
+  "timezones": "Africa/Libreville",
+  "dialCode": "+241",
+  "currency": {
+    "code": "XAF",
+    "symbol": "FCF",
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124527f"
+  },
+  "countryId": 78,
+  "countryName": "Gambia",
+  "twoDigtCode": "GM",
+  "threeDigtCode": "GMB",
+  "isoNumeric": 270,
+  "status": "active",
+  "timezones": "Africa/Banjul",
+  "dialCode": "+220",
+  "currency": {
+    "code": "GMD",
+    "symbol": "D",
+    "name": "Dalasi"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245280"
+  },
+  "countryId": 79,
+  "countryName": "Georgia",
+  "twoDigtCode": "GE",
+  "threeDigtCode": "GEO",
+  "isoNumeric": 268,
+  "status": "active",
+  "timezones": "Atlantic/South_Georgia",
+  "dialCode": "+995",
+  "currency": {
+    "code": "GEL",
+    "symbol": false,
+    "name": "Lari"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245281"
+  },
+  "countryId": 80,
+  "countryName": "Germany",
+  "twoDigtCode": "DE",
+  "threeDigtCode": "DEU",
+  "isoNumeric": 276,
+  "status": "active",
+  "timezones": "Europe/Berlin",
+  "dialCode": "+49",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245282"
+  },
+  "countryId": 81,
+  "countryName": "Ghana",
+  "twoDigtCode": "GH",
+  "threeDigtCode": "GHA",
+  "isoNumeric": 288,
+  "status": "active",
+  "timezones": "Africa/Accra",
+  "dialCode": "+233",
+  "currency": {
+    "code": "GHC",
+    "symbol": "¢",
+    "name": "Cedi"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245283"
+  },
+  "countryId": 82,
+  "countryName": "Gibraltar",
+  "twoDigtCode": "GI",
+  "threeDigtCode": "GIB",
+  "isoNumeric": 292,
+  "status": "active",
+  "timezones": "Europe/Gibraltar",
+  "dialCode": "+350",
+  "currency": {
+    "code": "GIP",
+    "symbol": "£",
+    "name": "Pound"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245284"
+  },
+  "countryId": 83,
+  "countryName": "Greece",
+  "twoDigtCode": "GR",
+  "threeDigtCode": "GRC",
+  "isoNumeric": 300,
+  "status": "active",
+  "timezones": "Europe/Athens",
+  "dialCode": "+30",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245285"
+  },
+  "countryId": 84,
+  "countryName": "Greenland",
+  "twoDigtCode": "GL",
+  "threeDigtCode": "GRL",
+  "isoNumeric": 304,
+  "status": "active",
+  "timezones": "America/Godthab",
+  "dialCode": "+299",
+  "currency": {
+    "code": "DKK",
+    "symbol": "kr",
+    "name": "Krone"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245286"
+  },
+  "countryId": 85,
+  "countryName": "Grenada",
+  "twoDigtCode": "GD",
+  "threeDigtCode": "GRD",
+  "isoNumeric": 308,
+  "status": "active",
+  "timezones": "America/Grenada",
+  "dialCode": "+1473",
+  "currency": {
+    "code": "XCD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245287"
+  },
+  "countryId": 86,
+  "countryName": "Guadeloupe",
+  "twoDigtCode": "GP",
+  "threeDigtCode": "GLP",
+  "isoNumeric": 312,
+  "status": "active",
+  "timezones": "America/Guadeloupe",
+  "dialCode": "+590",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245288"
+  },
+  "countryId": 87,
+  "countryName": "Guam",
+  "twoDigtCode": "GU",
+  "threeDigtCode": "GUM",
+  "isoNumeric": 316,
+  "status": "active",
+  "timezones": "Pacific/Guam",
+  "dialCode": "+1671",
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245289"
+  },
+  "countryId": 88,
+  "countryName": "Guatemala",
+  "twoDigtCode": "GT",
+  "threeDigtCode": "GTM",
+  "isoNumeric": 320,
+  "status": "active",
+  "timezones": "America/Guatemala",
+  "dialCode": "+502",
+  "currency": {
+    "code": "GTQ",
+    "symbol": "Q",
+    "name": "Quetzal"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124528a"
+  },
+  "countryId": 89,
+  "countryName": "Guinea",
+  "twoDigtCode": "GN",
+  "threeDigtCode": "GIN",
+  "isoNumeric": 324,
+  "status": "active",
+  "timezones": "Pacific/Port_Moresby",
+  "dialCode": "+224",
+  "currency": {
+    "code": "GNF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124528b"
+  },
+  "countryId": 90,
+  "countryName": "Guinea-Bissau",
+  "twoDigtCode": "GW",
+  "threeDigtCode": "GNB",
+  "isoNumeric": 624,
+  "status": "active",
+  "timezones": "Africa/Bissau",
+  "dialCode": "+245",
+  "currency": {
+    "code": "XOF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124528c"
+  },
+  "countryId": 91,
+  "countryName": "Guyana",
+  "twoDigtCode": "GY",
+  "threeDigtCode": "GUY",
+  "isoNumeric": 328,
+  "status": "active",
+  "timezones": "America/Guyana",
+  "dialCode": "+595",
+  "currency": {
+    "code": "GYD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124528d"
+  },
+  "countryId": 92,
+  "countryName": "Haiti",
+  "twoDigtCode": "HT",
+  "threeDigtCode": "HTI",
+  "isoNumeric": 332,
+  "status": "active",
+  "timezones": "America/Port-au-Prince",
+  "dialCode": "+509",
+  "currency": {
+    "code": "HTG",
+    "symbol": "G",
+    "name": "Gourde"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124528e"
+  },
+  "countryId": 93,
+  "countryName": "Heard Island and McDonald Islands",
+  "twoDigtCode": "HM",
+  "threeDigtCode": "HMD",
+  "isoNumeric": 334,
+  "currency": {
+    "code": "AUD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124528f"
+  },
+  "countryId": 94,
+  "countryName": "Honduras",
+  "twoDigtCode": "HN",
+  "threeDigtCode": "HND",
+  "isoNumeric": 340,
+  "status": "active",
+  "timezones": "America/Tegucigalpa",
+  "dialCode": "+504",
+  "currency": {
+    "code": "HNL",
+    "symbol": "L",
+    "name": "Lempira"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245290"
+  },
+  "countryId": 95,
+  "countryName": "Hong Kong",
+  "twoDigtCode": "HK",
+  "threeDigtCode": "HKG",
+  "isoNumeric": 344,
+  "status": "active",
+  "timezones": "Asia/Hong_Kong",
+  "dialCode": "+852",
+  "currency": {
+    "code": "HKD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245291"
+  },
+  "countryId": 96,
+  "countryName": "Hungary",
+  "twoDigtCode": "HU",
+  "threeDigtCode": "HUN",
+  "isoNumeric": 348,
+  "status": "active",
+  "timezones": "Europe/Budapest",
+  "dialCode": "+36",
+  "currency": {
+    "code": "HUF",
+    "symbol": "Ft",
+    "name": "Forint"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245292"
+  },
+  "countryId": 97,
+  "countryName": "Iceland",
+  "twoDigtCode": "IS",
+  "threeDigtCode": "ISL",
+  "isoNumeric": 352,
+  "status": "active",
+  "timezones": "Atlantic/Reykjavik",
+  "dialCode": "+354",
+  "currency": {
+    "code": "ISK",
+    "symbol": "kr",
+    "name": "Krona"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245293"
+  },
+  "countryId": 98,
+  "countryName": "India",
+  "twoDigtCode": "IN",
+  "threeDigtCode": "IND",
+  "isoNumeric": 356,
+  "status": "active",
+  "timezones": "Indian/Antananarivo",
+  "dialCode": "+91",
+  "currency": {
+    "code": "INR",
+    "symbol": "₹",
+    "name": "Rupee"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245294"
+  },
+  "countryId": 99,
+  "countryName": "Indonesia",
+  "twoDigtCode": "ID",
+  "threeDigtCode": "IDN",
+  "isoNumeric": 360,
+  "status": "active",
+  "timezones": "Asia/Jakarta",
+  "dialCode": "+62",
+  "currency": {
+    "code": "IDR",
+    "symbol": "Rp",
+    "name": "Rupiah"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245295"
+  },
+  "countryId": 100,
+  "countryName": "Iran",
+  "twoDigtCode": "IR",
+  "threeDigtCode": "IRN",
+  "isoNumeric": 364,
+  "status": "active",
+  "timezones": "Asia/Tehran",
+  "dialCode": "+98",
+  "currency": {
+    "code": "IRR",
+    "symbol": "﷼",
+    "name": "Rial"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245296"
+  },
+  "countryId": 101,
+  "countryName": "Iraq",
+  "twoDigtCode": "IQ",
+  "threeDigtCode": "IRQ",
+  "isoNumeric": 368,
+  "status": "active",
+  "timezones": "Asia/Baghdad",
+  "dialCode": "+964",
+  "currency": {
+    "code": "IQD",
+    "symbol": false,
+    "name": "Dinar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245297"
+  },
+  "countryId": 102,
+  "countryName": "Ireland",
+  "twoDigtCode": "IE",
+  "threeDigtCode": "IRL",
+  "isoNumeric": 372,
+  "status": "active",
+  "timezones": "Europe/Dublin",
+  "dialCode": "+353",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245298"
+  },
+  "countryId": 103,
+  "countryName": "Israel",
+  "twoDigtCode": "IL",
+  "threeDigtCode": "ISR",
+  "isoNumeric": 376,
+  "status": "active",
+  "timezones": "Asia/Jerusalem",
+  "dialCode": "+972",
+  "currency": {
+    "code": "ILS",
+    "symbol": "₪",
+    "name": "Shekel"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245299"
+  },
+  "countryId": 104,
+  "countryName": "Italy",
+  "twoDigtCode": "IT",
+  "threeDigtCode": "ITA",
+  "isoNumeric": 380,
+  "status": "active",
+  "timezones": "Europe/Rome",
+  "dialCode": "+39",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124529a"
+  },
+  "countryId": 105,
+  "countryName": "Ivory Coast",
+  "twoDigtCode": "CI",
+  "threeDigtCode": "CIV",
+  "isoNumeric": 384,
+  "status": "active",
+  "timezones": "Africa/Abidjan",
+  "dialCode": null,
+  "currency": {
+    "code": "XOF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124529b"
+  },
+  "countryId": 106,
+  "countryName": "Jamaica",
+  "twoDigtCode": "JM",
+  "threeDigtCode": "JAM",
+  "isoNumeric": 388,
+  "status": "active",
+  "timezones": "America/Jamaica",
+  "dialCode": "+1876",
+  "currency": {
+    "code": "JMD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124529c"
+  },
+  "countryId": 107,
+  "countryName": "Japan",
+  "twoDigtCode": "JP",
+  "threeDigtCode": "JPN",
+  "isoNumeric": 392,
+  "status": "active",
+  "timezones": "Asia/Tokyo",
+  "dialCode": "+81",
+  "currency": {
+    "code": "JPY",
+    "symbol": "¥",
+    "name": "Yen"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124529d"
+  },
+  "countryId": 108,
+  "countryName": "Jordan",
+  "twoDigtCode": "JO",
+  "threeDigtCode": "JOR",
+  "isoNumeric": 400,
+  "status": "active",
+  "timezones": "Asia/Amman",
+  "dialCode": "+962",
+  "currency": {
+    "code": "JOD",
+    "symbol": false,
+    "name": "Dinar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124529e"
+  },
+  "countryId": 109,
+  "countryName": "Kazakhstan",
+  "twoDigtCode": "KZ",
+  "threeDigtCode": "KAZ",
+  "isoNumeric": 398,
+  "status": "active",
+  "timezones": "Asia/Almaty",
+  "dialCode": "+77",
+  "currency": {
+    "code": "KZT",
+    "symbol": "лв",
+    "name": "Tenge"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124529f"
+  },
+  "countryId": 110,
+  "countryName": "Kenya",
+  "twoDigtCode": "KE",
+  "threeDigtCode": "KEN",
+  "isoNumeric": 404,
+  "status": "active",
+  "timezones": "Africa/Nairobi",
+  "dialCode": "+254",
+  "currency": {
+    "code": "KES",
+    "symbol": false,
+    "name": "Shilling"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452a0"
+  },
+  "countryId": 111,
+  "countryName": "Kiribati",
+  "twoDigtCode": "KI",
+  "threeDigtCode": "KIR",
+  "isoNumeric": 296,
+  "status": "active",
+  "timezones": "Pacific/Kiritimati",
+  "dialCode": "+686",
+  "currency": {
+    "code": "AUD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452a1"
+  },
+  "countryId": 112,
+  "countryName": "Kuwait",
+  "twoDigtCode": "KW",
+  "threeDigtCode": "KWT",
+  "isoNumeric": 414,
+  "status": "active",
+  "timezones": "Asia/Kuwait",
+  "dialCode": "+965",
+  "currency": {
+    "code": "KWD",
+    "symbol": false,
+    "name": "Dinar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452a2"
+  },
+  "countryId": 113,
+  "countryName": "Kyrgyzstan",
+  "twoDigtCode": "KG",
+  "threeDigtCode": "KGZ",
+  "isoNumeric": 417,
+  "status": "active",
+  "timezones": "Asia/Bishkek",
+  "dialCode": "+996",
+  "currency": {
+    "code": "KGS",
+    "symbol": "лв",
+    "name": "Som"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452a3"
+  },
+  "countryId": 114,
+  "countryName": "Laos",
+  "twoDigtCode": "LA",
+  "threeDigtCode": "LAO",
+  "isoNumeric": 418,
+  "status": "active",
+  "timezones": "Asia/Vientiane",
+  "dialCode": "+856",
+  "currency": {
+    "code": "LAK",
+    "symbol": "₭",
+    "name": "Kip"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452a4"
+  },
+  "countryId": 115,
+  "countryName": "Latvia",
+  "twoDigtCode": "LV",
+  "threeDigtCode": "LVA",
+  "isoNumeric": 428,
+  "status": "active",
+  "timezones": "Europe/Riga",
+  "dialCode": "+371",
+  "currency": {
+    "code": "LVL",
+    "symbol": "Ls",
+    "name": "Lat"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452a5"
+  },
+  "countryId": 116,
+  "countryName": "Lebanon",
+  "twoDigtCode": "LB",
+  "threeDigtCode": "LBN",
+  "isoNumeric": 422,
+  "status": "active",
+  "timezones": "Asia/Beirut",
+  "dialCode": "+961",
+  "currency": {
+    "code": "LBP",
+    "symbol": "£",
+    "name": "Pound"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452a6"
+  },
+  "countryId": 117,
+  "countryName": "Lesotho",
+  "twoDigtCode": "LS",
+  "threeDigtCode": "LSO",
+  "isoNumeric": 426,
+  "status": "active",
+  "timezones": "Africa/Maseru",
+  "dialCode": "+266",
+  "currency": {
+    "code": "LSL",
+    "symbol": "L",
+    "name": "Loti"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452a7"
+  },
+  "countryId": 118,
+  "countryName": "Liberia",
+  "twoDigtCode": "LR",
+  "threeDigtCode": "LBR",
+  "isoNumeric": 430,
+  "status": "active",
+  "timezones": "Africa/Monrovia",
+  "dialCode": "+231",
+  "currency": {
+    "code": "LRD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452a8"
+  },
+  "countryId": 119,
+  "countryName": "Libya",
+  "twoDigtCode": "LY",
+  "threeDigtCode": "LBY",
+  "isoNumeric": 434,
+  "status": "active",
+  "timezones": "Africa/Tripoli",
+  "dialCode": "+218",
+  "currency": {
+    "code": "LYD",
+    "symbol": false,
+    "name": "Dinar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452a9"
+  },
+  "countryId": 120,
+  "countryName": "Liechtenstein",
+  "twoDigtCode": "LI",
+  "threeDigtCode": "LIE",
+  "isoNumeric": 438,
+  "status": "active",
+  "timezones": "Europe/Vaduz",
+  "dialCode": "+423",
+  "currency": {
+    "code": "CHF",
+    "symbol": "CHF",
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452aa"
+  },
+  "countryId": 121,
+  "countryName": "Lithuania",
+  "twoDigtCode": "LT",
+  "threeDigtCode": "LTU",
+  "isoNumeric": 440,
+  "status": "active",
+  "timezones": "Europe/Vilnius",
+  "dialCode": "+370",
+  "currency": {
+    "code": "LTL",
+    "symbol": "Lt",
+    "name": "Litas"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452ab"
+  },
+  "countryId": 122,
+  "countryName": "Luxembourg",
+  "twoDigtCode": "LU",
+  "threeDigtCode": "LUX",
+  "isoNumeric": 442,
+  "status": "active",
+  "timezones": "Europe/Luxembourg",
+  "dialCode": "+352",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452ac"
+  },
+  "countryId": 123,
+  "countryName": "Macao",
+  "twoDigtCode": "MO",
+  "threeDigtCode": "MAC",
+  "isoNumeric": 446,
+  "dialCode": "+853",
+  "status": "active",
+  "timezones": null,
+  "currency": {
+    "code": "MOP",
+    "symbol": "MOP",
+    "name": "Pataca"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452ad"
+  },
+  "countryId": 124,
+  "countryName": "Macedonia",
+  "twoDigtCode": "MK",
+  "threeDigtCode": "MKD",
+  "isoNumeric": 807,
+  "status": "active",
+  "timezones": "Europe/Skopje",
+  "dialCode": "+389",
+  "currency": {
+    "code": "MKD",
+    "symbol": "ден",
+    "name": "Denar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452ae"
+  },
+  "countryId": 125,
+  "countryName": "Madagascar",
+  "twoDigtCode": "MG",
+  "threeDigtCode": "MDG",
+  "isoNumeric": 450,
+  "status": "active",
+  "timezones": null,
+  "dialCode": "+261",
+  "currency": {
+    "code": "MGA",
+    "symbol": false,
+    "name": "Ariary"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452af"
+  },
+  "countryId": 126,
+  "countryName": "Malawi",
+  "twoDigtCode": "MW",
+  "threeDigtCode": "MWI",
+  "isoNumeric": 454,
+  "status": "active",
+  "timezones": "Africa/Blantyre",
+  "dialCode": "+265",
+  "currency": {
+    "code": "MWK",
+    "symbol": "MK",
+    "name": "Kwacha"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452b0"
+  },
+  "countryId": 127,
+  "countryName": "Malaysia",
+  "twoDigtCode": "MY",
+  "threeDigtCode": "MYS",
+  "isoNumeric": 458,
+  "status": "active",
+  "timezones": "Asia/Kuala_Lumpur",
+  "dialCode": "+60",
+  "currency": {
+    "code": "MYR",
+    "symbol": "RM",
+    "name": "Ringgit"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452b1"
+  },
+  "countryId": 128,
+  "countryName": "Maldives",
+  "twoDigtCode": "MV",
+  "threeDigtCode": "MDV",
+  "isoNumeric": 462,
+  "status": "active",
+  "timezones": "Indian/Maldives",
+  "dialCode": "+960",
+  "currency": {
+    "code": "MVR",
+    "symbol": "Rf",
+    "name": "Rufiyaa"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452b2"
+  },
+  "countryId": 129,
+  "countryName": "Mali",
+  "twoDigtCode": "ML",
+  "threeDigtCode": "MLI",
+  "isoNumeric": 466,
+  "status": "active",
+  "timezones": "Africa/Bamako",
+  "dialCode": "+223",
+  "currency": {
+    "code": "XOF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452b3"
+  },
+  "countryId": 130,
+  "countryName": "Malta",
+  "twoDigtCode": "MT",
+  "threeDigtCode": "MLT",
+  "isoNumeric": 470,
+  "status": "active",
+  "timezones": "Europe/Malta",
+  "dialCode": "+356",
+  "currency": {
+    "code": "MTL",
+    "symbol": false,
+    "name": "Lira"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452b4"
+  },
+  "countryId": 131,
+  "countryName": "Marshall Islands",
+  "twoDigtCode": "MH",
+  "threeDigtCode": "MHL",
+  "isoNumeric": 584,
+  "status": "active",
+  "timezones": "Pacific/Majuro",
+  "dialCode": "+692",
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452b5"
+  },
+  "countryId": 132,
+  "countryName": "Martinique",
+  "twoDigtCode": "MQ",
+  "threeDigtCode": "MTQ",
+  "isoNumeric": 474,
+  "status": "active",
+  "timezones": "America/Martinique",
+  "dialCode": "+596",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452b6"
+  },
+  "countryId": 133,
+  "countryName": "Mauritania",
+  "twoDigtCode": "MR",
+  "threeDigtCode": "MRT",
+  "isoNumeric": 478,
+  "status": "active",
+  "timezones": "Africa/Nouakchott",
+  "dialCode": "+222",
+  "currency": {
+    "code": "MRO",
+    "symbol": "UM",
+    "name": "Ouguiya"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452b7"
+  },
+  "countryId": 134,
+  "countryName": "Mauritius",
+  "twoDigtCode": "MU",
+  "threeDigtCode": "MUS",
+  "isoNumeric": 480,
+  "status": "active",
+  "timezones": "Indian/Mauritius",
+  "dialCode": "+230",
+  "currency": {
+    "code": "MUR",
+    "symbol": "₨",
+    "name": "Rupee"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452b8"
+  },
+  "countryId": 135,
+  "countryName": "Mayotte",
+  "twoDigtCode": "YT",
+  "threeDigtCode": "MYT",
+  "isoNumeric": 175,
+  "status": "active",
+  "timezones": "Indian/Mayotte",
+  "dialCode": "+262",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452b9"
+  },
+  "countryId": 136,
+  "countryName": "Mexico",
+  "twoDigtCode": "MX",
+  "threeDigtCode": "MEX",
+  "isoNumeric": 484,
+  "status": "active",
+  "timezones": "America/Tijuana",
+  "dialCode": "+52",
+  "currency": {
+    "code": "MXN",
+    "symbol": "$",
+    "name": "Peso"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452ba"
+  },
+  "countryId": 137,
+  "countryName": "Micronesia",
+  "twoDigtCode": "FM",
+  "threeDigtCode": "FSM",
+  "isoNumeric": 583,
+  "status": "active",
+  "timezones": "Pacific/Pohnpei",
+  "dialCode": "+691",
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452bb"
+  },
+  "countryId": 138,
+  "countryName": "Moldova",
+  "twoDigtCode": "MD",
+  "threeDigtCode": "MDA",
+  "isoNumeric": 498,
+  "status": "active",
+  "timezones": "Europe/Chisinau",
+  "dialCode": "+373",
+  "currency": {
+    "code": "MDL",
+    "symbol": false,
+    "name": "Leu"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452bc"
+  },
+  "countryId": 139,
+  "countryName": "Monaco",
+  "twoDigtCode": "MC",
+  "threeDigtCode": "MCO",
+  "isoNumeric": 492,
+  "status": "active",
+  "timezones": "Europe/Monaco",
+  "dialCode": "+377",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452bd"
+  },
+  "countryId": 140,
+  "countryName": "Mongolia",
+  "twoDigtCode": "MN",
+  "threeDigtCode": "MNG",
+  "isoNumeric": 496,
+  "status": "active",
+  "timezones": "Asia/Ulaanbaatar",
+  "dialCode": "+976",
+  "currency": {
+    "code": "MNT",
+    "symbol": "₮",
+    "name": "Tugrik"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452be"
+  },
+  "countryId": 141,
+  "countryName": "Montserrat",
+  "twoDigtCode": "MS",
+  "threeDigtCode": "MSR",
+  "isoNumeric": 500,
+  "status": "active",
+  "timezones": "America/Montserrat",
+  "dialCode": "+1664",
+  "currency": {
+    "code": "XCD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452bf"
+  },
+  "countryId": 142,
+  "countryName": "Morocco",
+  "twoDigtCode": "MA",
+  "threeDigtCode": "MAR",
+  "isoNumeric": 504,
+  "status": "active",
+  "timezones": "Africa/Casablanca",
+  "dialCode": "+212",
+  "currency": {
+    "code": "MAD",
+    "symbol": false,
+    "name": "Dirham"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452c0"
+  },
+  "countryId": 143,
+  "countryName": "Mozambique",
+  "twoDigtCode": "MZ",
+  "threeDigtCode": "MOZ",
+  "isoNumeric": 508,
+  "status": "active",
+  "timezones": "Africa/Maputo",
+  "dialCode": "+258",
+  "currency": {
+    "code": "MZN",
+    "symbol": "MT",
+    "name": "Meticail"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452c1"
+  },
+  "countryId": 144,
+  "countryName": "Myanmar",
+  "twoDigtCode": "MM",
+  "threeDigtCode": "MMR",
+  "isoNumeric": 104,
+  "status": "active",
+  "timezones": "Asia/Rangoon",
+  "dialCode": "+95",
+  "currency": {
+    "code": "MMK",
+    "symbol": "K",
+    "name": "Kyat"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452c2"
+  },
+  "countryId": 145,
+  "countryName": "Namibia",
+  "twoDigtCode": "NA",
+  "threeDigtCode": "NAM",
+  "isoNumeric": 516,
+  "status": "active",
+  "timezones": "Africa/Windhoek",
+  "dialCode": "+264",
+  "currency": {
+    "code": "NAD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452c3"
+  },
+  "countryId": 146,
+  "countryName": "Nauru",
+  "twoDigtCode": "NR",
+  "threeDigtCode": "NRU",
+  "isoNumeric": 520,
+  "status": "active",
+  "timezones": "Pacific/Nauru",
+  "dialCode": "+674",
+  "currency": {
+    "code": "AUD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452c4"
+  },
+  "countryId": 147,
+  "countryName": "Nepal",
+  "twoDigtCode": "NP",
+  "threeDigtCode": "NPL",
+  "isoNumeric": 524,
+  "status": "active",
+  "timezones": "Asia/Kathmandu",
+  "dialCode": "+977",
+  "currency": {
+    "code": "NPR",
+    "symbol": "₨",
+    "name": "Rupee"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452c5"
+  },
+  "countryId": 148,
+  "countryName": "Netherlands",
+  "twoDigtCode": "NL",
+  "threeDigtCode": "NLD",
+  "isoNumeric": 528,
+  "status": "active",
+  "timezones": "Europe/Amsterdam",
+  "dialCode": "+31",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452c6"
+  },
+  "countryId": 149,
+  "countryName": "Netherlands Antilles",
+  "twoDigtCode": "AN",
+  "threeDigtCode": "ANT",
+  "isoNumeric": 530,
+  "status": "active",
+  "timezones": "Europe/Amsterdam",
+  "dialCode": "+599",
+  "currency": {
+    "code": "ANG",
+    "symbol": "ƒ",
+    "name": "Guilder"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452c7"
+  },
+  "countryId": 150,
+  "countryName": "New Caledonia",
+  "twoDigtCode": "NC",
+  "threeDigtCode": "NCL",
+  "isoNumeric": 540,
+  "status": "active",
+  "timezones": "Pacific/Noumea",
+  "dialCode": "+687",
+  "currency": {
+    "code": "XPF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452c8"
+  },
+  "countryId": 151,
+  "countryName": "New Zealand",
+  "twoDigtCode": "NZ",
+  "threeDigtCode": "NZL",
+  "isoNumeric": 554,
+  "status": "active",
+  "timezones": "Pacific/Auckland",
+  "dialCode": "+64",
+  "currency": {
+    "code": "NZD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452c9"
+  },
+  "countryId": 152,
+  "countryName": "Nicaragua",
+  "twoDigtCode": "NI",
+  "threeDigtCode": "NIC",
+  "isoNumeric": 558,
+  "status": "active",
+  "timezones": "America/Managua",
+  "dialCode": "+505",
+  "currency": {
+    "code": "NIO",
+    "symbol": "C$",
+    "name": "Cordoba"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452ca"
+  },
+  "countryId": 153,
+  "countryName": "Niger",
+  "twoDigtCode": "NE",
+  "threeDigtCode": "NER",
+  "isoNumeric": 562,
+  "status": "active",
+  "timezones": "Africa/Niamey",
+  "dialCode": "+227",
+  "currency": {
+    "code": "XOF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452cb"
+  },
+  "countryId": 154,
+  "countryName": "Nigeria",
+  "twoDigtCode": "NG",
+  "threeDigtCode": "NGA",
+  "isoNumeric": 566,
+  "status": "active",
+  "timezones": "Africa/Lagos",
+  "currency": {
+    "code": "NGN",
+    "symbol": "₦",
+    "name": "Naira"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452cc"
+  },
+  "countryId": 155,
+  "countryName": "Niue",
+  "twoDigtCode": "NU",
+  "threeDigtCode": "NIU",
+  "isoNumeric": 570,
+  "status": "active",
+  "timezones": "Pacific/Niue",
+  "dialCode": "+683",
+  "currency": {
+    "code": "NZD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452cd"
+  },
+  "countryId": 156,
+  "countryName": "Norfolk Island",
+  "twoDigtCode": "NF",
+  "threeDigtCode": "NFK",
+  "isoNumeric": 574,
+  "status": "active",
+  "timezones": "Pacific/Norfolk",
+  "dialCode": "+672",
+  "currency": {
+    "code": "AUD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452ce"
+  },
+  "countryId": 157,
+  "countryName": "North Korea",
+  "twoDigtCode": "KP",
+  "threeDigtCode": "PRK",
+  "isoNumeric": 408,
+  "status": "active",
+  "timezones": "Asia/Pyongyang",
+  "dialCode": null,
+  "currency": {
+    "code": "KPW",
+    "symbol": "₩",
+    "name": "Won"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452cf"
+  },
+  "countryId": 158,
+  "countryName": "Northern Mariana Islands",
+  "twoDigtCode": "MP",
+  "threeDigtCode": "MNP",
+  "isoNumeric": 580,
+  "status": "active",
+  "timezones": "Pacific/Saipan",
+  "dialCode": "+1670",
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452d0"
+  },
+  "countryId": 159,
+  "countryName": "Norway",
+  "twoDigtCode": "NO",
+  "threeDigtCode": "NOR",
+  "isoNumeric": 578,
+  "status": "active",
+  "timezones": "Europe/Oslo",
+  "dialCode": "+47",
+  "currency": {
+    "code": "NOK",
+    "symbol": "kr",
+    "name": "Krone"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452d1"
+  },
+  "countryId": 160,
+  "countryName": "Oman",
+  "twoDigtCode": "OM",
+  "threeDigtCode": "OMN",
+  "isoNumeric": 512,
+  "status": "active",
+  "timezones": "Asia/Muscat",
+  "dialCode": "+968",
+  "currency": {
+    "code": "OMR",
+    "symbol": "﷼",
+    "name": "Rial"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452d2"
+  },
+  "countryId": 161,
+  "countryName": "Pakistan",
+  "twoDigtCode": "PK",
+  "threeDigtCode": "PAK",
+  "isoNumeric": 586,
+  "status": "active",
+  "timezones": "Asia/Karachi",
+  "dialCode": "+92",
+  "currency": {
+    "code": "PKR",
+    "symbol": "₨",
+    "name": "Rupee"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452d3"
+  },
+  "countryId": 162,
+  "countryName": "Palau",
+  "twoDigtCode": "PW",
+  "threeDigtCode": "PLW",
+  "isoNumeric": 585,
+  "status": "active",
+  "timezones": "Pacific/Palau",
+  "dialCode": "+680",
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452d4"
+  },
+  "countryId": 163,
+  "countryName": "Palestinian Territory",
+  "twoDigtCode": "PS",
+  "threeDigtCode": "PSE",
+  "isoNumeric": 275,
+  "status": "active",
+  "timezones": "Palestine",
+  "dialCode": "+970",
+  "currency": {
+    "code": "ILS",
+    "symbol": "₪",
+    "name": "Shekel"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452d5"
+  },
+  "countryId": 164,
+  "countryName": "Panama",
+  "twoDigtCode": "PA",
+  "threeDigtCode": "PAN",
+  "isoNumeric": 591,
+  "status": "active",
+  "timezones": "America/Panama",
+  "dialCode": "+507",
+  "currency": {
+    "code": "PAB",
+    "symbol": "B/.",
+    "name": "Balboa"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452d6"
+  },
+  "countryId": 165,
+  "countryName": "Papua New Guinea",
+  "twoDigtCode": "PG",
+  "threeDigtCode": "PNG",
+  "isoNumeric": 598,
+  "status": "active",
+  "timezones": "Papua",
+  "dialCode": "+675",
+  "currency": {
+    "code": "PGK",
+    "symbol": false,
+    "name": "Kina"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452d7"
+  },
+  "countryId": 166,
+  "countryName": "Paraguay",
+  "twoDigtCode": "PY",
+  "threeDigtCode": "PRY",
+  "isoNumeric": 600,
+  "status": "active",
+  "timezones": "America/Asuncion",
+  "dialCode": "+595",
+  "currency": {
+    "code": "PYG",
+    "symbol": "Gs",
+    "name": "Guarani"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452d8"
+  },
+  "countryId": 167,
+  "countryName": "Peru",
+  "twoDigtCode": "PE",
+  "threeDigtCode": "PER",
+  "isoNumeric": 604,
+  "status": "active",
+  "timezones": "America/Lima",
+  "dialCode": "+51",
+  "currency": {
+    "code": "PEN",
+    "symbol": "S/.",
+    "name": "Sol"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452d9"
+  },
+  "countryId": 168,
+  "countryName": "Philippines",
+  "twoDigtCode": "PH",
+  "threeDigtCode": "PHL",
+  "isoNumeric": 608,
+  "status": "active",
+  "timezones": "Asia/Manila",
+  "dialCode": "+63",
+  "currency": {
+    "code": "PHP",
+    "symbol": "Php",
+    "name": "Peso"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452da"
+  },
+  "countryId": 169,
+  "countryName": "Pitcairn",
+  "twoDigtCode": "PN",
+  "threeDigtCode": "PCN",
+  "isoNumeric": 612,
+  "status": "active",
+  "timezones": "Pacific/Pitcairn",
+  "dialCode": "+872",
+  "currency": {
+    "code": "NZD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452db"
+  },
+  "countryId": 170,
+  "countryName": "Poland",
+  "twoDigtCode": "PL",
+  "threeDigtCode": "POL",
+  "isoNumeric": 616,
+  "status": "active",
+  "timezones": "Europe/Warsaw",
+  "dialCode": "+48",
+  "currency": {
+    "code": "PLN",
+    "symbol": "zł",
+    "name": "Zloty"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452dc"
+  },
+  "countryId": 171,
+  "countryName": "Portugal",
+  "twoDigtCode": "PT",
+  "threeDigtCode": "PRT",
+  "isoNumeric": 620,
+  "status": "active",
+  "timezones": "Europe/Lisbon",
+  "dialCode": "+351",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452dd"
+  },
+  "countryId": 172,
+  "countryName": "Puerto Rico",
+  "twoDigtCode": "PR",
+  "threeDigtCode": "PRI",
+  "isoNumeric": 630,
+  "status": "active",
+  "timezones": "America/Puerto_Rico",
+  "dialCode": "+1939",
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452de"
+  },
+  "countryId": 173,
+  "countryName": "Qatar",
+  "twoDigtCode": "QA",
+  "threeDigtCode": "QAT",
+  "isoNumeric": 634,
+  "status": "active",
+  "timezones": "Asia/Qatar",
+  "dialCode": "+974",
+  "currency": {
+    "code": "QAR",
+    "symbol": "﷼",
+    "name": "Rial"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452df"
+  },
+  "countryId": 174,
+  "countryName": "Republic of the Congo",
+  "twoDigtCode": "CG",
+  "threeDigtCode": "COG",
+  "isoNumeric": 178,
+  "status": "active",
+  "timezones": "Africa/Brazzaville",
+  "dialCode": "+243",
+  "currency": {
+    "code": "XAF",
+    "symbol": "FCF",
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452e0"
+  },
+  "countryId": 175,
+  "countryName": "Reunion",
+  "twoDigtCode": "RE",
+  "threeDigtCode": "REU",
+  "isoNumeric": 638,
+  "status": "active",
+  "timezones": "Indian/Reunion",
+  "dialCode": "+262",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452e1"
+  },
+  "countryId": 176,
+  "countryName": "Romania",
+  "twoDigtCode": "RO",
+  "threeDigtCode": "ROU",
+  "isoNumeric": 642,
+  "status": "active",
+  "timezones": "Europe/Bucharest",
+  "dialCode": "+40",
+  "currency": {
+    "code": "RON",
+    "symbol": "lei",
+    "name": "Leu"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452e2"
+  },
+  "countryId": 177,
+  "countryName": "Russia",
+  "twoDigtCode": "RU",
+  "threeDigtCode": "RUS",
+  "isoNumeric": 643,
+  "status": "active",
+  "timezones": "Asia/Kamchatka",
+  "dialCode": "+7",
+  "currency": {
+    "code": "RUB",
+    "symbol": "руб",
+    "name": "Ruble"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452e3"
+  },
+  "countryId": 178,
+  "countryName": "Rwanda",
+  "twoDigtCode": "RW",
+  "threeDigtCode": "RWA",
+  "isoNumeric": 646,
+  "status": "active",
+  "timezones": "Africa/Kigali",
+  "dialCode": "+250",
+  "currency": {
+    "code": "RWF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452e4"
+  },
+  "countryId": 179,
+  "countryName": "Saint Helena",
+  "twoDigtCode": "SH",
+  "threeDigtCode": "SHN",
+  "isoNumeric": 654,
+  "status": "active",
+  "timezones": "Saint/Helena",
+  "dialCode": "+290",
+  "currency": {
+    "code": "SHP",
+    "symbol": "£",
+    "name": "Pound"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452e5"
+  },
+  "countryId": 180,
+  "countryName": "Saint Kitts and Nevis",
+  "twoDigtCode": "KN",
+  "threeDigtCode": "KNA",
+  "isoNumeric": 659,
+  "status": "active",
+  "timezones": "America/St_Kitts",
+  "dialCode": "+1869",
+  "currency": {
+    "code": "XCD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452e6"
+  },
+  "countryId": 181,
+  "countryName": "Saint Lucia",
+  "twoDigtCode": "LC",
+  "threeDigtCode": "LCA",
+  "isoNumeric": 662,
+  "status": "active",
+  "timezones": "America/St_Lucia",
+  "dialCode": "+1758",
+  "currency": {
+    "code": "XCD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452e7"
+  },
+  "countryId": 182,
+  "countryName": "Saint Pierre and Miquelon",
+  "twoDigtCode": "PM",
+  "threeDigtCode": "SPM",
+  "isoNumeric": 666,
+  "status": "active",
+  "timezones": "America/Miquelon",
+  "dialCode": "+508",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452e8"
+  },
+  "countryId": 183,
+  "countryName": "Saint Vincent and the Grenadines",
+  "twoDigtCode": "VC",
+  "threeDigtCode": "VCT",
+  "isoNumeric": 670,
+  "status": "active",
+  "timezones": "America/St_Vincent",
+  "dialCode": "+1784",
+  "currency": {
+    "code": "XCD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452e9"
+  },
+  "countryId": 184,
+  "countryName": "Samoa",
+  "twoDigtCode": "WS",
+  "threeDigtCode": "WSM",
+  "isoNumeric": 882,
+  "status": "active",
+  "timezones": "Pacific/Apia",
+  "dialCode": "+685",
+  "currency": {
+    "code": "WST",
+    "symbol": "WS$",
+    "name": "Tala"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452ea"
+  },
+  "countryId": 185,
+  "countryName": "San Marino",
+  "twoDigtCode": "SM",
+  "threeDigtCode": "SMR",
+  "isoNumeric": 674,
+  "status": "active",
+  "timezones": "Europe/San_Marino",
+  "dialCode": "+378",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452eb"
+  },
+  "countryId": 187,
+  "countryName": "Saudi Arabia",
+  "twoDigtCode": "SA",
+  "threeDigtCode": "SAU",
+  "isoNumeric": 682,
+  "status": "active",
+  "timezones": "Asia/Riyadh",
+  "dialCode": "+966",
+  "currency": {
+    "code": "SAR",
+    "symbol": "﷼",
+    "name": "Rial"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452ec"
+  },
+  "countryId": 188,
+  "countryName": "Senegal",
+  "twoDigtCode": "SN",
+  "threeDigtCode": "SEN",
+  "isoNumeric": 686,
+  "status": "active",
+  "timezones": "Africa/Dakar",
+  "dialCode": "+221",
+  "currency": {
+    "code": "XOF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452ed"
+  },
+  "countryId": 189,
+  "countryName": "Serbia and Montenegro",
+  "twoDigtCode": "CS",
+  "threeDigtCode": "SCG",
+  "isoNumeric": 891,
+  "status": "active",
+  "timezones": "Europe/Belgrade",
+  "dialCode": "+381",
+  "currency": {
+    "code": "RSD",
+    "symbol": "Дин",
+    "name": "Dinar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452ee"
+  },
+  "countryId": 190,
+  "countryName": "Seychelles",
+  "twoDigtCode": "SC",
+  "threeDigtCode": "SYC",
+  "isoNumeric": 690,
+  "status": "active",
+  "timezones": "Indian/Mahe",
+  "dialCode": "+248",
+  "currency": {
+    "code": "SCR",
+    "symbol": "₨",
+    "name": "Rupee"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452ef"
+  },
+  "countryId": 191,
+  "countryName": "Sierra Leone",
+  "twoDigtCode": "SL",
+  "threeDigtCode": "SLE",
+  "isoNumeric": 694,
+  "status": "active",
+  "timezones": "Africa/Freetown",
+  "dialCode": "+232",
+  "currency": {
+    "code": "SLL",
+    "symbol": "Le",
+    "name": "Leone"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452f0"
+  },
+  "countryId": 192,
+  "countryName": "Singapore",
+  "twoDigtCode": "SG",
+  "threeDigtCode": "SGP",
+  "isoNumeric": 702,
+  "status": "active",
+  "timezones": "Asia/Singapore",
+  "dialCode": "+65",
+  "currency": {
+    "code": "SGD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452f1"
+  },
+  "countryId": 193,
+  "countryName": "Slovakia",
+  "twoDigtCode": "SK",
+  "threeDigtCode": "SVK",
+  "isoNumeric": 703,
+  "status": "active",
+  "timezones": "Europe/Bratislava",
+  "dialCode": "+421",
+  "currency": {
+    "code": "SKK",
+    "symbol": "Sk",
+    "name": "Koruna"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452f2"
+  },
+  "countryId": 194,
+  "countryName": "Slovenia",
+  "twoDigtCode": "SI",
+  "threeDigtCode": "SVN",
+  "isoNumeric": 705,
+  "status": "active",
+  "timezones": "Europe/Ljubljana",
+  "dialCode": "+386",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452f3"
+  },
+  "countryId": 195,
+  "countryName": "Solomon Islands",
+  "twoDigtCode": "SB",
+  "threeDigtCode": "SLB",
+  "isoNumeric": 90,
+  "status": "active",
+  "timezones": "Pacific/Guadalcanal",
+  "dialCode": "+677",
+  "currency": {
+    "code": "SBD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452f4"
+  },
+  "countryId": 196,
+  "countryName": "Somalia",
+  "twoDigtCode": "SO",
+  "threeDigtCode": "SOM",
+  "isoNumeric": 706,
+  "status": "active",
+  "timezones": "Africa/Mogadishu",
+  "dialCode": "+252",
+  "currency": {
+    "code": "SOS",
+    "symbol": "S",
+    "name": "Shilling"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452f5"
+  },
+  "countryId": 197,
+  "countryName": "South Africa",
+  "twoDigtCode": "ZA",
+  "threeDigtCode": "ZAF",
+  "isoNumeric": 710,
+  "status": "active",
+  "timezones": "Africa/Johannesburg",
+  "dialCode": "+27",
+  "currency": {
+    "code": "ZAR",
+    "symbol": "R",
+    "name": "Rand"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452f6"
+  },
+  "countryId": 198,
+  "countryName": "South Georgia and the South Sandwich Islands",
+  "twoDigtCode": "GS",
+  "threeDigtCode": "SGS",
+  "isoNumeric": 239,
+  "status": "active",
+  "timezones": "Atlantic/South_Georgia",
+  "dialCode": "+500",
+  "currency": {
+    "code": "GBP",
+    "symbol": "£",
+    "name": "Pound"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452f7"
+  },
+  "countryId": 199,
+  "countryName": "South Korea",
+  "twoDigtCode": "KR",
+  "threeDigtCode": "KOR",
+  "isoNumeric": 410,
+  "status": "active",
+  "timezones": "Asia/Seoul",
+  "dialCode": "+82",
+  "currency": {
+    "code": "KRW",
+    "symbol": "₩",
+    "name": "Won"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452f8"
+  },
+  "countryId": 200,
+  "countryName": "Spain",
+  "twoDigtCode": "ES",
+  "threeDigtCode": "ESP",
+  "isoNumeric": 724,
+  "status": "active",
+  "timezones": "Europe/Madrid",
+  "dialCode": "+34",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452f9"
+  },
+  "countryId": 201,
+  "countryName": "Sri Lanka",
+  "twoDigtCode": "LK",
+  "threeDigtCode": "LKA",
+  "isoNumeric": 144,
+  "status": "active",
+  "timezones": "Asia/Colombo",
+  "dialCode": "+94",
+  "currency": {
+    "code": "LKR",
+    "symbol": "₨",
+    "name": "Rupee"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452fa"
+  },
+  "countryId": 202,
+  "countryName": "Sudan",
+  "twoDigtCode": "SD",
+  "threeDigtCode": "SDN",
+  "isoNumeric": 736,
+  "status": "active",
+  "timezones": "Africa/Khartoum",
+  "dialCode": "+249",
+  "currency": {
+    "code": "SDD",
+    "symbol": false,
+    "name": "Dinar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452fb"
+  },
+  "countryId": 203,
+  "countryName": "Suriname",
+  "twoDigtCode": "SR",
+  "threeDigtCode": "SUR",
+  "isoNumeric": 740,
+  "status": "active",
+  "timezones": "America/Paramaribo",
+  "dialCode": "+597",
+  "currency": {
+    "code": "SRD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452fc"
+  },
+  "countryId": 204,
+  "countryName": "Svalbard and Jan Mayen",
+  "twoDigtCode": "SJ",
+  "threeDigtCode": "SJM",
+  "isoNumeric": 744,
+  "status": "active",
+  "timezones": "Arctic/Longyearbyen",
+  "dialCode": "+47",
+  "currency": {
+    "code": "NOK",
+    "symbol": "kr",
+    "name": "Krone"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452fd"
+  },
+  "countryId": 205,
+  "countryName": "Swaziland",
+  "twoDigtCode": "SZ",
+  "threeDigtCode": "SWZ",
+  "isoNumeric": 748,
+  "status": "active",
+  "timezones": "Africa/Mbabane",
+  "dialCode": "+268",
+  "currency": {
+    "code": "SZL",
+    "symbol": false,
+    "name": "Lilangeni"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452fe"
+  },
+  "countryId": 206,
+  "countryName": "Sweden",
+  "twoDigtCode": "SE",
+  "threeDigtCode": "SWE",
+  "isoNumeric": 752,
+  "status": "active",
+  "timezones": "Europe/Stockholm",
+  "dialCode": "+46",
+  "currency": {
+    "code": "SEK",
+    "symbol": "kr",
+    "name": "Krona"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c312452ff"
+  },
+  "countryId": 207,
+  "countryName": "Switzerland",
+  "twoDigtCode": "CH",
+  "threeDigtCode": "CHE",
+  "isoNumeric": 756,
+  "status": "active",
+  "timezones": "Europe/Zurich",
+  "dialCode": "+41",
+  "currency": {
+    "code": "CHF",
+    "symbol": "CHF",
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245300"
+  },
+  "countryId": 208,
+  "countryName": "Syria",
+  "twoDigtCode": "SY",
+  "threeDigtCode": "SYR",
+  "isoNumeric": 760,
+  "status": "active",
+  "timezones": "Asia/Damascus",
+  "dialCode": "+963",
+  "currency": {
+    "code": "SYP",
+    "symbol": "£",
+    "name": "Pound"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245301"
+  },
+  "countryId": 209,
+  "countryName": "Taiwan",
+  "twoDigtCode": "TW",
+  "threeDigtCode": "TWN",
+  "isoNumeric": 158,
+  "status": "active",
+  "timezones": "Asia/Taipei",
+  "dialCode": "+886",
+  "currency": {
+    "code": "TWD",
+    "symbol": "NT$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245302"
+  },
+  "countryId": 210,
+  "countryName": "Tajikistan",
+  "twoDigtCode": "TJ",
+  "threeDigtCode": "TJK",
+  "isoNumeric": 762,
+  "status": "active",
+  "timezones": "Asia/Dushanbe",
+  "dialCode": "+992",
+  "currency": {
+    "code": "TJS",
+    "symbol": false,
+    "name": "Somoni"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245303"
+  },
+  "countryId": 211,
+  "countryName": "Tanzania",
+  "twoDigtCode": "TZ",
+  "threeDigtCode": "TZA",
+  "isoNumeric": 834,
+  "status": "active",
+  "timezones": "Africa/Dar_es_Salaam",
+  "dialCode": "+255",
+  "currency": {
+    "code": "TZS",
+    "symbol": false,
+    "name": "Shilling"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245304"
+  },
+  "countryId": 212,
+  "countryName": "Thailand",
+  "twoDigtCode": "TH",
+  "threeDigtCode": "THA",
+  "isoNumeric": 764,
+  "status": "active",
+  "timezones": "Asia/Bangkok",
+  "dialCode": "+66",
+  "currency": {
+    "code": "THB",
+    "symbol": "฿",
+    "name": "Baht"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245305"
+  },
+  "countryId": 213,
+  "countryName": "Togo",
+  "twoDigtCode": "TG",
+  "threeDigtCode": "TGO",
+  "isoNumeric": 768,
+  "status": "active",
+  "timezones": "Africa/Lome",
+  "dialCode": "+228",
+  "currency": {
+    "code": "XOF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245306"
+  },
+  "countryId": 214,
+  "countryName": "Tokelau",
+  "twoDigtCode": "TK",
+  "threeDigtCode": "TKL",
+  "isoNumeric": 772,
+  "status": "active",
+  "timezones": "Pacific/Fakaofo",
+  "dialCode": "+690",
+  "currency": {
+    "code": "NZD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245307"
+  },
+  "countryId": 215,
+  "countryName": "Tonga",
+  "twoDigtCode": "TO",
+  "threeDigtCode": "TON",
+  "isoNumeric": 776,
+  "status": "active",
+  "timezones": "Pacific/Tongatapu",
+  "dialCode": "+676",
+  "currency": {
+    "code": "TOP",
+    "symbol": "T$",
+    "name": "Paanga"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245308"
+  },
+  "countryId": 216,
+  "countryName": "Trinidad and Tobago",
+  "twoDigtCode": "TT",
+  "threeDigtCode": "TTO",
+  "isoNumeric": 780,
+  "status": "active",
+  "timezones": "America/Port_of_Spain",
+  "dialCode": "+1868",
+  "currency": {
+    "code": "TTD",
+    "symbol": "TT$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245309"
+  },
+  "countryId": 217,
+  "countryName": "Tunisia",
+  "twoDigtCode": "TN",
+  "threeDigtCode": "TUN",
+  "isoNumeric": 788,
+  "status": "active",
+  "timezones": "Africa/Tunis",
+  "dialCode": "+216",
+  "currency": {
+    "code": "TND",
+    "symbol": false,
+    "name": "Dinar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124530a"
+  },
+  "countryId": 218,
+  "countryName": "Turkey",
+  "twoDigtCode": "TR",
+  "threeDigtCode": "TUR",
+  "isoNumeric": 792,
+  "status": "active",
+  "timezones": "Europe/Istanbul",
+  "dialCode": "+90",
+  "currency": {
+    "code": "TRY",
+    "symbol": "YTL",
+    "name": "Lira"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124530b"
+  },
+  "countryId": 219,
+  "countryName": "Turkmenistan",
+  "twoDigtCode": "TM",
+  "threeDigtCode": "TKM",
+  "isoNumeric": 795,
+  "status": "active",
+  "timezones": "Asia/Ashgabat",
+  "dialCode": "+993",
+  "currency": {
+    "code": "TMM",
+    "symbol": "m",
+    "name": "Manat"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124530c"
+  },
+  "countryId": 220,
+  "countryName": "Turks and Caicos Islands",
+  "twoDigtCode": "TC",
+  "threeDigtCode": "TCA",
+  "isoNumeric": 796,
+  "status": "active",
+  "timezones": "America/Grand_Turk",
+  "dialCode": "+1649",
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124530d"
+  },
+  "countryId": 221,
+  "countryName": "Tuvalu",
+  "twoDigtCode": "TV",
+  "threeDigtCode": "TUV",
+  "isoNumeric": 798,
+  "status": "active",
+  "timezones": "Pacific/Funafuti",
+  "dialCode": "+688",
+  "currency": {
+    "code": "AUD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124530e"
+  },
+  "countryId": 222,
+  "countryName": "U.S. Virgin Islands",
+  "twoDigtCode": "VI",
+  "threeDigtCode": "VIR",
+  "isoNumeric": 850,
+  "status": "active",
+  "timezones": "America/Guyana",
+  "dialCode": "+1340",
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124530f"
+  },
+  "countryId": 223,
+  "countryName": "Uganda",
+  "twoDigtCode": "UG",
+  "threeDigtCode": "UGA",
+  "isoNumeric": 800,
+  "status": "active",
+  "timezones": "Africa/Kampala",
+  "dialCode": "+256",
+  "currency": {
+    "code": "UGX",
+    "symbol": false,
+    "name": "Shilling"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245310"
+  },
+  "countryId": 224,
+  "countryName": "Ukraine",
+  "twoDigtCode": "UA",
+  "threeDigtCode": "UKR",
+  "isoNumeric": 804,
+  "status": "active",
+  "timezones": "Europe/Kiev",
+  "dialCode": "+380",
+  "currency": {
+    "code": "UAH",
+    "symbol": "₴",
+    "name": "Hryvnia"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245311"
+  },
+  "countryId": 225,
+  "countryName": "United Arab Emirates",
+  "twoDigtCode": "AE",
+  "threeDigtCode": "ARE",
+  "isoNumeric": 784,
+  "status": "active",
+  "timezones": "Asia/Dubai",
+  "dialCode": "+971",
+  "currency": {
+    "code": "AED",
+    "symbol": false,
+    "name": "Dirham"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245312"
+  },
+  "countryId": 226,
+  "countryName": "United Kingdom",
+  "twoDigtCode": "GB",
+  "threeDigtCode": "GBR",
+  "isoNumeric": 826,
+  "status": "active",
+  "timezones": "Europe/London",
+  "dialCode": "+44",
+  "currency": {
+    "code": "GBP",
+    "symbol": "£",
+    "name": "Pound"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245313"
+  },
+  "countryId": 227,
+  "countryName": "United States",
+  "twoDigtCode": "US",
+  "threeDigtCode": "USA",
+  "isoNumeric": 840,
+  "dialCode": "+1",
+  "status": "active",
+  "timezones": "America/New_York",
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245314"
+  },
+  "countryId": 228,
+  "countryName": "United States Minor Outlying Islands",
+  "twoDigtCode": "UM",
+  "threeDigtCode": "UMI",
+  "isoNumeric": 581,
+  "status": "active",
+  "timezones": "Pacific/Johnston",
+  "dialCode": "+1",
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245315"
+  },
+  "countryId": 229,
+  "countryName": "Uruguay",
+  "twoDigtCode": "UY",
+  "threeDigtCode": "URY",
+  "isoNumeric": 858,
+  "status": "active",
+  "timezones": "America/Montevideo",
+  "dialCode": "+598",
+  "currency": {
+    "code": "UYU",
+    "symbol": "$U",
+    "name": "Peso"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245316"
+  },
+  "countryId": 230,
+  "countryName": "Uzbekistan",
+  "twoDigtCode": "UZ",
+  "threeDigtCode": "UZB",
+  "isoNumeric": 860,
+  "status": "active",
+  "timezones": "Asia/Samarkand",
+  "dialCode": "+998",
+  "currency": {
+    "code": "UZS",
+    "symbol": "лв",
+    "name": "Som"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245317"
+  },
+  "countryId": 231,
+  "countryName": "Vanuatu",
+  "twoDigtCode": "VU",
+  "threeDigtCode": "VUT",
+  "isoNumeric": 548,
+  "status": "active",
+  "timezones": "Pacific/Efate",
+  "dialCode": "+678",
+  "currency": {
+    "code": "VUV",
+    "symbol": "Vt",
+    "name": "Vatu"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245318"
+  },
+  "countryId": 232,
+  "countryName": "Vatican",
+  "twoDigtCode": "VA",
+  "threeDigtCode": "VAT",
+  "isoNumeric": 336,
+  "status": "active",
+  "timezones": "Europe/Vatican",
+  "dialCode": "+379",
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "name": "Euro"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c31245319"
+  },
+  "countryId": 233,
+  "countryName": "Venezuela",
+  "twoDigtCode": "VE",
+  "threeDigtCode": "VEN",
+  "isoNumeric": 862,
+  "status": "active",
+  "timezones": "America/Caracas",
+  "dialCode": "+58",
+  "currency": {
+    "code": "VEF",
+    "symbol": "Bs",
+    "name": "Bolivar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124531a"
+  },
+  "countryId": 234,
+  "countryName": "Vietnam",
+  "twoDigtCode": "VN",
+  "threeDigtCode": "VNM",
+  "isoNumeric": 704,
+  "status": "active",
+  "timezones": "Asia/Ho_Chi_Minh",
+  "dialCode": "+84",
+  "currency": {
+    "code": "VND",
+    "symbol": "₫",
+    "name": "Dong"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124531b"
+  },
+  "countryId": 235,
+  "countryName": "Wallis and Futuna",
+  "twoDigtCode": "WF",
+  "threeDigtCode": "WLF",
+  "isoNumeric": 876,
+  "dialCode": "+681",
+  "status": "active",
+  "timezones": "Pacific/Wallis",
+  "currency": {
+    "code": "XPF",
+    "symbol": false,
+    "name": "Franc"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124531c"
+  },
+  "countryId": 236,
+  "countryName": "Western Sahara",
+  "twoDigtCode": "EH",
+  "threeDigtCode": "ESH",
+  "isoNumeric": 732,
+  "status": "active",
+  "timezones": "Africa/El_Aaiun",
+  "dialCode": null,
+  "currency": {
+    "code": "MAD",
+    "symbol": false,
+    "name": "Dirham"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124531d"
+  },
+  "countryId": 237,
+  "countryName": "Yemen",
+  "twoDigtCode": "YE",
+  "threeDigtCode": "YEM",
+  "isoNumeric": 887,
+  "status": "active",
+  "timezones": "Asia/Aden",
+  "dialCode": "+967",
+  "currency": {
+    "code": "YER",
+    "symbol": "﷼",
+    "name": "Rial"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124531e"
+  },
+  "countryId": 238,
+  "countryName": "Zambia",
+  "twoDigtCode": "ZM",
+  "threeDigtCode": "ZMB",
+  "isoNumeric": 894,
+  "status": "active",
+  "timezones": "Africa/Lusaka",
+  "dialCode": "+260",
+  "currency": {
+    "code": "ZMK",
+    "symbol": "ZK",
+    "name": "Kwacha"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "642e787ee31e405c3124531f"
+  },
+  "countryId": 239,
+  "countryName": "Zimbabwe",
+  "twoDigtCode": "ZW",
+  "threeDigtCode": "ZWE",
+  "isoNumeric": 716,
+  "status": "active",
+  "timezones": "Africa/Harare",
+  "dialCode": "+263",
+  "currency": {
+    "code": "ZWD",
+    "symbol": "Z$",
+    "name": "Dollar"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675403722921"
+    }
+  }
+}]
