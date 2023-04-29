@@ -6,6 +6,7 @@ const path = require('path');
 var fileupload = require("express-fileupload");
 const device = require('express-device');
 var useragent = require('express-useragent');
+let countryCodeToFlagEmoji = require("country-code-to-flag-emoji");
 
 app.use(useragent.express());
 app.use(bodyParser.json());
@@ -23,7 +24,8 @@ app.use('/IndianKart/Admin', Router.AdminRoutes);
 
 app.use('/IndianKart/Admin/Auth', Router.ProductRoutes);
 
-app.listen(3000, (res) => {
-    let message = ({ "Connection": "Database Connected!", "Port": "http://localhost:3000/" });
+
+app.listen(5000, (res) => {
+    let message = ({ "Connection": "Database Connected!", "Port": "http://localhost:5000/" });
     console.log(message);
 })
