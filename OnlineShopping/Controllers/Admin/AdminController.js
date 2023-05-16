@@ -170,6 +170,22 @@ function AdminManagement() {
 
     }
 
+    this.CustomerDetails = async (req, res) => {
+        let customerList = await CustomerModel.find({}, { _id: 0, CustomerId: 1, CustomerName: 1, CustomerEmail: 1, CustomerMobile: 1 });
+        if (Utlis.empty(customerList)) {
+            res.send("No Records Found");
+        }
+        res.render("AdminInterface/CustomerLists",{ Customers: customerList });
+    }
+
+    this.CustomerDelete=async(req,res)=>{
+        let customerData=await CustomerModel.findOneAndDelete({CustomerId:req.body.customerId});
+        if(customerData){
+            return res.send("Customer Deleted SuccessFully");
+        }
+        return res.send("Failed To Delete");
+    }
+
 }
 
 module.exports = new AdminManagement();

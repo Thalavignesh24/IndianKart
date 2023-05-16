@@ -17,5 +17,9 @@ router.post('/AddCountry',AdminController.addCountry);
 
 router.post('/AddState',AdminController.addState);
 
+router.get('/CustomerLists',AdminController.CustomerDetails);
+
+router.delete('/CustomerDelete',AdminController.CustomerDelete);
+
 module.exports = router;
 
